@@ -5,51 +5,59 @@
         <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel = "stylesheet" href = "bootstrap-4.0.0/dist/css/bootstrap.min.css">
+        <!--<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">-->
 
     </head>
     <link rel = "stylesheet" href = "style.css">
     <body id = "body">
+        <div id = "headID">
         <nav class = "navbar">
-            <h1>Sat Arora</h1>
+            <h1></h1>
             <div class = "links">
                 <a href = "index.html" class = "nav-link">Home</a><a href = "#ABOUTME" class = "nav-link">About Me</a><a href = "Projects" class = "nav-link">Projects</a><a href = "resume.pdf" class = "nav-link" target = "_blank">Resume</a>
             </div>
         </nav>
-        <div class = "typewriter">
-            <h1>Hey there, I'm Sat Arora.</h1>
+        <div class = "typewriter" style = "padding-top: 1vh;">
+            <h1 style = "margin-top: 6vh;">Hey there, I'm Sat Arora.</h1>
         </div>
-        <div class = "container">
+        <div class = "container" style = "padding-top: 3vh;">
             <style>
                 .container {
-                    margin-top: 10em;
+                    margin-top: 15;
                     margin-bottom: 0;
                     text-align: center;
                 }
             </style>
-            <div class = "row">
-                <div class = "col-md-4">
-                    <img src= "Images/profile.jpg" class = "img-fluid">
-                </div>
+            <div class = "row row-eq-height" style = "padding-bottom: 0; margin-bottom: 0;">
+                
+                <img src= "Images/profile.png" style = "width: 100%;" class = "img-fluid">
+                
                 <div class = "col-md-8">
+                    <style>
+                        .col-md-8 {
+                            background-color: rgb(192, 237, 255);
+                        }z
+                    </style>
                     <h1>Welcome.<br>&nbsp;</h1>
-                    <h4>I am a creative problem solver who seeks for new and exciting challenges all the time. 
-                        As solving problems is a hobby, I have fallen in love with the field of Computer Science, and have begun ramping
-                        up my knowledge of different languages as well. I am also a CFC rated chess player, so I can keep my balance of 
-                        work with some games as well.
-                    </h4>
+
                 </div>
+            </div>
             </div>
         </div>
         <div class = "container" id = "abtme">
             <style>
                 #abtme {
-                    background-color: white;
+ 
                     color: black;
                     text-align: left;
 
                 }
             </style>
             <h1 id = "ABOUTME" style = 'text-align: center;'>About Me</h1>
+            <p>I am a creative problem solver who seeks for new and exciting challenges all the time. 
+                As solving problems is a hobby, I have fallen in love with the field of Computer Science, and have begun ramping
+                up my knowledge of different languages as well. I am also a CFC rated chess player, so I can keep my balance of 
+                work with some games as well.</p>
             <h3>Skills</h3>
             <ul>
                 <li>Python and Java developer</li>
@@ -77,10 +85,9 @@
             </ul>
 
             <h3 style = "margin-bottom: 0;">Education</h3>
-            <div class = "card-body" style = "margin-bottom: 0;">
+            <div class = "card-body" style = "padding-bottom: 0;">
                 <h5 class = "card-title">Talbot Trail Public School</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Graduated in June 2017</h6>
-                <br>
                 <h5 class = "card-title">Vincent Massey Secondary School</h5>
                 <h6 class="card-subtitle mb-2 text-muted">2017 - Present</h6>
                 <p class = "card-text">
@@ -92,21 +99,76 @@
             </div>
 
             <h3 style = "margin-bottom: 0;">Executive Experience</h3>
-            <div class = "card-body">
+            <div class = "card-body" style = "padding-bottom: 0;">
                 <h5 class = "card-title">All Night Social (ANS)</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Registration Organizer</h6>
-                <br>
+                <h6 class="card-subtitle mb-2 text-muted">Registration Organizer, 2019-2020</h6>
+                <p class = "card-text">
+                    <ul>
+                        <li>Created a system where tickets for being admitted to the event were digital</li>
+                        <li>Went to several classes around the school to advertise the event</li>
+                    </ul>
+                </p>
                 <h5 class = "card-title">MasseyHacks VI</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Logistics Organizer</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Logistics Organizer, 2019-2020</h6>
                 <p class = "card-text">
                     <ul>
                         <li>Made the event schedule and kept the event running smoothly</li>
-                        <li>Laid out the categories for prize winners</li>
+                        <li>Chose prizes for different category winners according to budget and popularity</li>
                     </ul>
                 </p>
             </div>
             
             
+            <h3 style = "margin-bottom: 0;">Volunteer Experience</h3>
+            <div class = "card-body" style = "padding-bottom: 0;">
+                <h5 class = "card-title">Teacher Learning and Leadership Program (TLLP) - Robotics</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Director, 2018-2019</h6>
+                    <ul>
+                        <li>Taught students from Grades 6-8 from various schools the basics of programming, engineering, and problem solving</li>
+                        <li>Assisted students that were invited into an interschool competiton to build the best robot to play tug-of-war</li>
+                    </ul>
+                <h5 class = "card-title" >CodeReach</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Volunteer, 2019-2020</h6>
+                <p class = "card-text">
+                    <ul>
+                        <li>Helped students from Grades 6-8 gain fundamental programming knowledge in Python</li>
+                        <li>This was done by assistance on probems and teaching basic concepts personalized to each individual</li>
+                    </ul>
+                </p>
+                <h5 class = "card-title">Windsor Regional Hospital - Ouelette Campus</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Volunteer, 2020-Present</h6>
+                <p class = "card-text">
+                    <ul>
+                        <li>Made sure there was enough stock on kits and items on the shelves</li>
+                        <li>Assissted and talked to patients to pass their time </li>
+                    </ul>
+                </p>
+            </div>
+
+            <h3 style = "margin-bottom: 0;">Extracurriculars and Other Programs</h3>
+            <div class = "card-body" style = "padding-bottom: 0;">
+                <ul>
+                <li><h5 class = "card-title">Computer Science Club</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Member: 2018-Present</h6></li>
+                <li><h5 class = "card-title">Science Olympics Club</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Member: 2017-2020, Teacher: 2020-Present</h6></li>
+                <li><h5 class = "card-title">Chess Club</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Member: 2017-Present</h6></li>
+                <li><h5 class = "card-title">Debate Club</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Member: 2017-2018, 2020-Present</h6></li>
+                <li><h5 class = "card-title">Windsor Math Enrichment Club</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Member: 2014-Present</h6>
+                    Studied contest level mathematics with former professor Mr. J. Bruce White</li>
+                <li><h5 class = "card-title">Tennis Team</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Member: 2018-2020</h6></li>
+                <li><h5 class = "card-title">Swim Team</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Member: 2018-2019</h6></li>
+                <li><h5 class = "card-title">Canada Math Camp</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Participant: 2019</h6>
+                    Invited as part of a group of grade 8-10 students who were top scorers on the 2018 Canadian Open Mathematics Challenge</li>
+                
+                </ul>
+            </div>
 
             
             

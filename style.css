@@ -1,16 +1,35 @@
 #body {
     --back : #00005C;
+    --back : #a4a4ff;   
     background-color: var(--back);
-    color : white;  
 }
+
+
+
+#headID {
+    --back : #00005C;
+    background-image : url("Images/back.jpg");
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+
+    
+    color:blue;
+
+}
+
+
 
 .navbar {
     background-color: black;
     position: fixed;
     right: 0vw;
     top: 0vh;
+    padding-top: 0;
+    margin-top: 0;
     min-width: 100vw;
     z-index: 1;
+
 }
 
 .nav-link {
@@ -25,6 +44,7 @@
 
 .row {
     background-position-x: center;
+    padding-bottom: 10vh;
 }
 
 .typewriter h1 {
