@@ -1,16 +1,19 @@
 #body {
     --back : #00005C;
     --back : #a4a4ff;   
-    background-color: var(--back);
+    background-color: var(--back);  
 }
 
 
 
+
 #headID {
-    --back : #00005C;
+    --back : #ffffff;
     background-image : url("Images/back.jpg");
     margin-bottom: 0;
     padding-bottom: 0;
+    min-height: 100vh;
+    max-height: 100vh;
 
 
     
@@ -18,7 +21,12 @@
 
 }
 
-
+.typewriter {
+    padding-top: 5vh;
+    color : white;
+    vertical-align: middle;
+    text-align: center;
+}
 
 .navbar {
     background-color: black;
@@ -47,30 +55,26 @@
     padding-bottom: 10vh;
 }
 
-.typewriter h1 {
-    margin: 0 auto;
-    margin-top: 10vh;
-    font-family: 'Noto Sans JP', sans-serif;
-    overflow: hidden;
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    /*margin: 0 auto;*/
-    width: 15em;
-    letter-spacing: .15em;
-    animation: 
-        typing 3.5s steps(40,end),
-        blink-caret .75s step-end infinite;
+
+
+.cursor {
+    display: inline-block;
+    width: 1px;;
+    animation: blink 1s infinite;
+}
+.cursor.typing {
+    animation: none;
 }
 
-@keyframes typing {
-    from {width: 0;}
-    to {width: 15em;}
+@keyframes blink {
+    0% {background-color: white;}
+    69% {background-color: white;}
+    70% {background-color: transparent;}
+    99% {background-color: transparent;}
+    100% {background-color: white;}
 }
 
-@keyframes blink-caret {
-    from,to { border-color: transparent;}
-    50% { border-color: orange; }
-}
+
 .fa {
     font-size: 200%;
     width: 1.1em;

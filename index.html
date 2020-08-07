@@ -6,42 +6,29 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel = "stylesheet" href = "bootstrap-4.0.0/dist/css/bootstrap.min.css">
         <!--<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">-->
-
     </head>
     <link rel = "stylesheet" href = "style.css">
+    
     <body id = "body">
         <div id = "headID">
-        <nav class = "navbar">
-            <h1></h1>
-            <div class = "links">
-                <a href = "index.html" class = "nav-link">Home</a><a href = "#ABOUTME" class = "nav-link">About Me</a><a href = "Projects" class = "nav-link">Projects</a><a href = "resume.pdf" class = "nav-link" target = "_blank">Resume</a>
-            </div>
-        </nav>
-        <div class = "typewriter" style = "padding-top: 1vh;">
-            <h1 style = "margin-top: 6vh;">Hey there, I'm Sat Arora.</h1>
-        </div>
-        <div class = "container" style = "padding-top: 3vh;">
-            <style>
-                .container {
-                    margin-top: 15;
-                    margin-bottom: 0;
-                    text-align: center;
-                }
-            </style>
-            <div class = "row row-eq-height" style = "padding-bottom: 0; margin-bottom: 0;">
-                
-                <img src= "Images/profile.png" style = "width: 100%;" class = "img-fluid">
-                
-                <div class = "col-md-8">
-                    <style>
-                        .col-md-8 {
-                            background-color: rgb(192, 237, 255);
-                        }z
-                    </style>
-                    <h1>Welcome.<br>&nbsp;</h1>
-
+            <nav class = "navbar">
+                <h1></h1>
+                <div class = "links">
+                    <a href = "index.html" class = "nav-link">Home</a><a href = "#ABOUTME" class = "nav-link">About Me</a><a href = "Projects" class = "nav-link">Projects</a><a href = "resume.pdf" class = "nav-link" target = "_blank">Resume</a>
                 </div>
+            </nav>
+            <div class = "typewriter"><!--1vh-->
+                <h1 style = "margin-top: 6vh;">
+                    <span id = "titleText"></span>
+                    <span class = "cursor">&nbsp</span></h1>
             </div>
+            <div class = "container" style = "padding-top: 3vh;">
+                <style>
+                    .container {
+                        text-align: center;
+                    }
+                </style>
+                <img src= "Images/profile.png" class = "img-fluid" style = "max-width: 300px; max-height: 300px;">-->
             </div>
         </div>
         <div class = "container" id = "abtme">
@@ -175,7 +162,7 @@
             
         </div>
 
-        <div class = "container" id = "bottomContainer">
+        <section id = "bottomContainer">
             <style>
                 #bottomContainer {
                     min-width: 100vw;
@@ -204,11 +191,11 @@
                         margin-top: 1em;
                     }
                 </style>
-                <p>Copyright Sat Arora 2020.</p>
+                <p>Copyright Sat Arora 2020. All rights reserved.</p>
             </div>
-        </div>
+        </section>
         
         
-
+        <script src = "script.js"></script> 
     </body>
 </html>
