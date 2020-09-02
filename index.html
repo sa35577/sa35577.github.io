@@ -3,18 +3,28 @@
 
         <title class = "shop-title">Sat Arora</title>
         <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <script src="https://kit.fontawesome.com/fdb9835e42.js" crossorigin="anonymous"></script>
         <link rel = "stylesheet" href = "bootstrap-4.0.0/dist/css/bootstrap.min.css">
         <!--<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">-->
     </head>
     <link rel = "stylesheet" href = "style.css">
     
-    <body id = "body">
+    <body id = "body" style = "background-image: url(Images/back2.png);">
+
         <div id = "headID">
             <nav class = "navbar">
                 <h1></h1>
+                <script>
+                    yes_js_login = function(loc) {
+                        arrowScroll(loc);
+                    } 
+                </script>
                 <div class = "links">
-                    <a href = "index.html" class = "nav-link">Home</a><a href = "#ABOUTME" class = "nav-link">About Me</a><a href = "Projects" class = "nav-link">Projects</a><a href = "resume.pdf" class = "nav-link" target = "_blank">Resume</a>
+                    <a href="#headID" onclick="yes_js_login('#headID'); return false;" class = "nav-link">Home</a>
+                    <a href="#AboutMe" onclick="yes_js_login('#AboutMe'); return false;" class = "nav-link">About Me</a>
+                    <a href = "Projects" class = "nav-link">Projects</a>
+                    <a href = "resume.pdf" class = "nav-link" target = "_blank">Resume</a>
                 </div>
             </nav>
             <div class = "typewriter"><!--1vh-->
@@ -28,23 +38,18 @@
                         text-align: center;
                     }
                 </style>
-                <img src= "Images/profile.png" class = "img-fluid" style = "max-width: 300px; max-height: 300px;">-->
+                <img src= "Images/profile.png" class = "img-fluid" style = "max-width: 300px; max-height: 300px;">
+            </div>
+            <div class = "downBtn">
+                <a href = "javascript:void(0)" onclick = "arrowScroll('#AboutMe')"><i class="fas fa-angle-down"></i></a>
             </div>
         </div>
-        <div class = "container" id = "abtme">
-            <style>
-                #abtme {
- 
-                    color: black;
-                    text-align: left;
-
-                }
-            </style>
-            <h1 id = "ABOUTME" style = 'text-align: center;'>About Me</h1>
+        <section class = "container" id = "abtme" style = "background-color: rgba(39, 221, 154, 0.8);">
+            <h1 id = "AboutMe" style = 'text-align: center; padding-top: 6.5vh;'>ABOUT ME</h1>
             <p>I am a creative problem solver who seeks for new and exciting challenges all the time. 
                 As solving problems is a hobby, I have fallen in love with the field of Computer Science, and have begun ramping
                 up my knowledge of different languages as well. I am also a CFC rated chess player, so I can keep my balance of 
-                work with some games as well.</p>
+                work with some games as well. :)</p>
             <h3>Skills</h3>
             <ul>
                 <li>Python and Java developer</li>
@@ -144,27 +149,23 @@
                 <li><h5 class = "card-title">Debate Club</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Member: 2017-2018, 2020-Present</h6></li>
                 <li><h5 class = "card-title">Windsor Math Enrichment Club</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Member: 2014-Present</h6>
-                    Studied contest level mathematics with former professor Mr. J. Bruce White</li>
+                    <h6 class="card-subtitle mb-2 text-muted" style = "margin-bottom: 0px !important; ">Member: 2014-Present</h6>
+                    <div style = "margin-bottom: 8px;">Studied contest level mathematics with former professor Mr. J. Bruce White</div></li>
                 <li><h5 class = "card-title">Tennis Team</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Member: 2018-2020</h6></li>
                 <li><h5 class = "card-title">Swim Team</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Member: 2018-2019</h6></li>
                 <li><h5 class = "card-title">Canada Math Camp</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Participant: 2019</h6>
-                    Invited as part of a group of grade 8-10 students who were top scorers on the 2018 Canadian Open Mathematics Challenge</li>
+                    <h6 class="card-subtitle mb-2 text-muted" style = "margin-bottom: 0px !important; ">Participant: 2019</h6>
+                    <div style = "margin-bottom: 8px;">Invited as part of a group of grade 8-10 students who were top scorers on the 2018 Canadian Open Mathematics Challenge</div></li>
                 
                 </ul>
             </div>
+        </section>
 
-            
-            
-            
-        </div>
-
-        <section id = "bottomContainer">
+        <section id = "bottom">
             <style>
-                #bottomContainer {
+                #bottom {
                     min-width: 100vw;
                     background-color: gray;
                     

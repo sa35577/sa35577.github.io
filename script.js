@@ -24,7 +24,12 @@ function funnyType() {
 
     }
 }
-
+/*thanks StackOverflow*/
+function arrowScroll(targ){
+    document.querySelector(targ).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
 
 function funnyErase() {
     if (charIdx > 0) {
@@ -42,7 +47,7 @@ function funnyErase() {
 }  
 
 document.addEventListener("DOMContentLoaded", function(e) {
-    setTimeout(funnyType,parseInt(newDelay/5));
+    setTimeout(funnyType,parseInt(newDelay/2));
 
     
 });
