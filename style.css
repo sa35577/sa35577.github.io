@@ -113,6 +113,13 @@ h1,h2,h3,h4,h5,h6 {
     100% {background-color: white;}
 }
 
+.dot {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 
 .fa {
     font-size: 200%;
