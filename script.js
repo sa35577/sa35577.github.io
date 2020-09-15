@@ -48,10 +48,18 @@ function funnyErase() {
 
 document.addEventListener("DOMContentLoaded", function(e) {
     setTimeout(funnyType,parseInt(newDelay/2));
-
     
+    //document.getElementById('fermat').style.height = document.getElementById('fermat').style.width;
 });
 $(document).ready(function() {
+    
+    $("#fermat").height($("#fermat").width());
+    $("#ccc").height($("#ccc").width());
+    $("#csmc").height($("#csmc").width());
+    $("#euclid").width($("#euclid").height());
+    $("#aime").height($("#aime").width());
+    $("#sspc").height($("#sspc").width());
+    $("#comc").height($("#comc").width());
     
     
     

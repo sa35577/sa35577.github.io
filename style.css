@@ -2,7 +2,7 @@
 
 img {
     max-width: 100%;
-    object-fit: cover;
+    display: block;
     height: auto;
 }
 
@@ -113,12 +113,13 @@ h1,h2,h3,h4,h5,h6 {
     100% {background-color: white;}
 }
 
-.dot {
-    height: 10vw;
-    width: 10vw;
+.circle {
+    background-color: lightblue;
     border-radius: 50%;
-    display: inline-block;
+
+    
 }
+
 
 
 .fa {
