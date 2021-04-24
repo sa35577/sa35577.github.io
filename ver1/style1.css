@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+html {
+    font-size: 16px;
+    .h1 {
+        
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+#body {
+    /*--back : #00005C;
+    --back : #a4a4ff;   
+    background-color: var(--back); */
+    /*background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(178,98,225,1) 50%, rgba(0,212,255,1) 100%);
+    */
+
+    font-family: 'Quicksand', sans-serif;
+    
+}

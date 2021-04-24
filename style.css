@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');*/
+
+
+html {
+    font-size: 15px;
+}
 
 img {
     max-width: 100%;
@@ -15,6 +21,7 @@ img {
     */
 
     font-family: 'Quicksand', sans-serif;
+    
 }
 
 
@@ -36,11 +43,16 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-.typewriter {
+
+#typewriterHeader {
     padding-top: 5vh;
     color : white;
     vertical-align: middle;
     text-align: center;
+}
+
+.profile-photo {
+   
 }
 
 .navbar {
@@ -129,7 +141,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .fas {
     color: white;
-    font-size: 300%;
+    font-size: calc(2em + 1vw);
     text-decoration: none !important;
 }
 .fa-instagram {

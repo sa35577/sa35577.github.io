@@ -9,7 +9,17 @@ const newDelay = 2500;
 const funnyTypeDelay = 100;
 const funnyEraseDelay = 50;
 
+const contestScores = ["56/60","85/100", "37/75","9/15","1st","1st","138/150"];
+const contestNames = ["Canadian Senior Mathematics Contest", 
+"Euclid Mathematics Contest",
+"Canadian Computing Competition",
+"American Invitaitonal Mathematics Exam",
+"University of Windsor Secondary School Programming Competition",
+"University of Windsor Science Olympiad",
+"Fermat Math Contest"]; 
+
 let arrIdx = 0, charIdx = 0;
+let score = 0;
 
 function funnyType() {
     if (charIdx < sentences[arrIdx].length) {
@@ -46,11 +56,17 @@ function funnyErase() {
     }
 }  
 
+
+
 document.addEventListener("DOMContentLoaded", function(e) {
     setTimeout(funnyType,parseInt(newDelay/2));
+     
+    
     
     //document.getElementById('fermat').style.height = document.getElementById('fermat').style.width;
 });
+
+
 $(document).ready(function() {
     
     $("#fermat").height($("#fermat").width());
@@ -60,7 +76,7 @@ $(document).ready(function() {
     $("#aime").height($("#aime").width());
     $("#sspc").height($("#sspc").width());
     $("#comc").height($("#comc").width());
-    
+     
     
     
 });
