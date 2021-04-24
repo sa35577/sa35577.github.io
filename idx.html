@@ -263,6 +263,27 @@
                         //width: wi
                     })
                 }
+                function executeCSClub() {
+                    msg = `The CS Club at my high school has two main focuses: Competitive Programming and Web Development.
+                    As the Senior Leader of this club, I create weekly content for the Grade 11 and 12 members of the club. These include
+                    lessons in topics such as graph theory, dynamic programming, data structures, and many other algorithms.
+                    I am also involved in making several practice problems and contests for participants to get experience with contests.
+                    <br><br>
+                    <div>
+                       <button class="btn btn-primary" onclick="window.open('https://www.youtube.com/channel/UC2kA44DuP5hsqAwRrYns2YA')">YouTube Channel</button>
+                       <button class="btn btn-danger" onclick="window.open('https://github.com/VMCSC/Senior')"><i class="fab fa-github"></i>&nbsp;GitHub Lessons</button>
+                    </div>`
+                    Swal.fire({
+                        title: 'Vincent Massey CS Club',
+                        html: msg,
+                        showCloseButton: true,
+                        showConfirmButton: false,
+                        imageUrl: 'https://i.ibb.co/wWjWy4H/vmcs-logo.png', //'https://i.ibb.co/Z2P2dn4/7WC-Logo.png',
+
+                        imageHeight: 135,
+                        imageAlt: 'Custom image',
+                    })
+                }
             </script>
 
             
@@ -283,13 +304,36 @@
               </div>
               
               <div class="column">
-                <div class="card">
-                  <h3>Aortta</h3>
-                  <p>Hack the North 2020++</p>
+                <div class="card" onclick="executeCSClub()" style="background-color: lightblue">
+                  <h3>CS Club</h3>
+                  <p>Senior Leader</p>
                 </div>
               </div>
               
             </div>
+        <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">
+            <div class="column">
+                <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">
+                    <h3>7 Week Challenge</h3>
+                    <p>Logistics Executive</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <!--<div class="card" onclick="executeCP()" style = "background-color: lightblue;">
+                    <h3>Competitive Programming</h3>
+                    <p>Just a classic hobby.</p>
+                </div>-->
+            </div>
+
+            <div class="column">
+                <!--<div class="card" onclick="executeCSClub()" style="background-color: lightblue">
+                    <h3>CS Club</h3>
+                    <p>Senior Leader</p>
+                </div>-->
+            </div>
+
+        </div>
 
 
 
