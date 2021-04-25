@@ -8,29 +8,31 @@
         <script src="https://kit.fontawesome.com/fdb9835e42.js" crossorigin="anonymous"></script>
         <link rel = "stylesheet" href = "bootstrap-4.0.0/dist/css/bootstrap.min.css">
         <!--<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">-->
-        <link rel = "stylesheet" href = "style.css">
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <link rel = "stylesheet" href = "style.css">
     </head>
     
     
-    <body id = "body" style = "background-image: url(Images/back2.png);">
-        <section id = "headID">
-            <nav class = "navbar">
-                <h1></h1>
+    <body id = "body" style = "background-color: black;">
+        <section id = "headID" style = "background-color: black;">
+            <nav class = "navbar justify-content-center" >
+
                 <script>
                     yes_js_login = function(loc) {
                         arrowScroll(loc);
                     } 
                 </script>
-                <div class = "links">
+                <div class = "links" style = "text-align: center;">
                     <a href="#headID" onclick="yes_js_login('#headID'); return false;" class = "nav-link">Home</a>
                     <a href="#AboutMe" onclick="yes_js_login('#AboutMe'); return false;" class = "nav-link">About Me</a>
-                    <a href = "Projects" class = "nav-link">Projects</a>
-                    <a href = "resume.pdf" class = "nav-link" target = "_blank">Resume</a>
+                    <a href = "#Contests" onclick="yes_js_login('#Contests'); return false;" class = "nav-link">Contests</a>
+                    <a href = "#Experience" onclick="yes_js_login('#Experience'); return false;" class = "nav-link">Experience</a>
+                    <a href = "resumeFinal.pdf" class = "nav-link" target = "_blank">Resume</a>
                 </div>
             </nav>
             <div class = "typewriter"><!--1vh-->
@@ -39,7 +41,7 @@
                     <span class = "cursor">&nbsp</span></h1>
             </div>
             <div class = "container" style = "padding-top: 3vh; ">
-                <img alt = "Profile photo of Sat Arora." src= "Images/profile.png" class = "img-fluid profile-photo" style = "margin-left: auto; margin-right: auto;">
+                <img alt = "Profile photo of Sat Arora." src= "Images/profile.png" class = "img-fluid profile-photo" style = "margin-left: auto; margin-right: auto; height: 30vh; width: 30vh;">
             </div>
             <div class = "downBtn">
                 <a href = "javascript:void(0)" onclick = "arrowScroll('#AboutMe')"><i class="fas fa-angle-down"></i></a>
@@ -76,17 +78,17 @@
                                 <img style = " margin-left: 2vw ;" src = "Images/tennisLogo.png">
                             </div>
                             <br>
-                            along with more problem solving puzzles.
+                            along with more problem-solving puzzles.
                         </div>
                     </div>
                 </div>
             </section>
         </div>
         <div style = "height: 30vh;"></div>
-        <div class = "container-fluid text-center" style = "background-color:rgba(110, 252, 153, 0.8); margin-left: auto; margin-right: auto; width: 90%;">
-            <section id = "math"  style = "font-size: calc(.85em + 1vw); font-weight: bold;">
+        <div class = "container-fluid text-center" style = "background-color:rgba(110,252,153,0.8); margin-left: auto; margin-right: auto; width: 90%;">
+            <section id = "Contests"  style = "font-size: calc(.85em + 1vw); font-weight: bold;">
                 <div style = "height: 7vh;"></div>
-                <h1 style = "font-size: calc(.85em + 4vw);">Contest Scores</h1>
+                <h1 style = "font-size: calc(.85em + 4vw);">Contests</h1>
                 I like to write a lot of Math and Computer Science contests. This is because the problem solving skills required to achieve a high score stimulate my brain,
                 and I loved doing them ever since I was in elementary school. I feel that I invest a lot of time into contest preparation, so here are the scores I 
                 have gotten on some of them! 
@@ -99,7 +101,7 @@
                         <li data-target="#contestCarousel" data-slide-to="4"></li>
 
                     </ol>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" style = "height: 25vh;">
                         <div class="carousel-item active">
                             <h1>56/60</h1>
                             <p class="d-block w-100">2020 Canadian Senior Mathematics Contest<br>Unviersity of Waterloo</p>
@@ -163,7 +165,7 @@
                 </div>-->
             </section>
         </div>
-        
+        <div style = "height: 30vh;"></div>
 
 
         <style>
@@ -209,232 +211,281 @@
               background-color: #f1f1f1;
               cursor: pointer;
             }
-            </style>
+        </style>
   
-            <script>
-                function executeICS4UFSE() {
-                    msg = `
-                        This is a project I made in Java for the Final Summative Evaluation for my ICS4U class (Grade 12 Computer Science). 
-                        To change things up a bit beyond making a game, I decided to make an application that can allow YOU to create and play 
-                        a game to your heart's content! There are several sprites that allow for messages, powerups, and enemies to make the game
-                        interesting to play. This project was inspired by Gamestar Mechanic.<br><br>
-                        With Java, I used several packages and incorporated graphics using the Swing library. Click the link below to check it out!<br><br>
-                        <div>
-                            <button class="btn btn-danger" onclick="window.open('https://github.com/sa35577/ICS4U-FSE')"><i class="fab fa-github"></i> GitHub</button>
-                        </div>
-                    `
-                    Swal.fire({
-                        title: 'Game Creator & Player',
-                        html: msg,
-                        showCloseButton: true,
-                        showConfirmButton: false,
-                        imageUrl: 'https://i.ibb.co/1QfggWG/ICS4UFSE.png',
-                        
-                        imageHeight: 135,
-                        imageAlt: 'Custom image',
-                        })
-                }
-                function executeCP() {
-                    msg = "I like to apply my problem-solving skills in many ways, and competitive programming is one of my personal favorites!" + 
-                            "<br> I have solved hundreds of problems on the <a href = \"https://dmoj.ca\" target = \"blank\">DMOJ</a> primarily using C/C++, Canada's most popular competitive programming online judge." +
-                            " Currently, I am a Candidate Master and ranked top 100 by points.<br><br>" + `
-                            <div>
-                                <button class="btn btn-primary" onclick="window.open('https://dmoj.ca/user/sa35577')">DMOJ Profile</button>
-                                <button class="btn btn-danger" onclick="window.open('https://github.com/sa35577/Competitive_Programming')"><i class="fab fa-github"></i> GitHub</button>
-                            </div>
-                            `
-                    /*var w;
-                    if (screen.width >= 600) {
-                        w = 700;
-                    }
-                    else {
-                        w = ~~(screen.width/3);
-                    }*/
-                    //var wi = toString(w) + 'px';
-                    Swal.fire({
-                        title: 'Competitive Programming',
-                        html: msg,
-                        showCloseButton: true,
-                        showConfirmButton: false,
-                        imageUrl: 'https://static.dmoj.ca/static/icons/logo.d0dbdf0b98be.svg',
-                        imageWidth: 400,
-                        imageHeight: 110,
-                        imageAlt: 'Custom image',
-                        //width: wi
-                    })
-                }
-                function executeCSClub() {
-                    msg = `The CS Club at my high school has two main focuses: Competitive Programming and Web Development.
-                    As the Senior Leader of this club, I create weekly content for the Grade 11 and 12 members of the club. These include
-                    lessons in topics such as graph theory, dynamic programming, data structures, and many other algorithms.
-                    I am also involved in making several practice problems and contests for participants to get experience with contests.
-                    <br><br>
+        <script>
+            function executeICS4UFSE() {
+                msg = `
+                    This is a project I made in Java for the Final Summative Evaluation for my ICS4U class (Grade 12 Computer Science).
+                    To change things up a bit beyond making a game, I decided to make an application that can allow YOU to create and play
+                    a game to your heart's content! There are several sprites that allow for messages, powerups, and enemies to make the game
+                    interesting to play. This project was inspired by Gamestar Mechanic.<br><br>
+                    With Java, I used several packages and incorporated graphics using the Swing library. Click the link below to check it out!<br><br>
                     <div>
-                       <button class="btn btn-primary" onclick="window.open('https://www.youtube.com/channel/UC2kA44DuP5hsqAwRrYns2YA')">YouTube Channel</button>
-                       <button class="btn btn-danger" onclick="window.open('https://github.com/VMCSC/Senior')"><i class="fab fa-github"></i>&nbsp;GitHub Lessons</button>
-                    </div>`
-                    Swal.fire({
-                        title: 'Vincent Massey CS Club',
-                        html: msg,
-                        showCloseButton: true,
-                        showConfirmButton: false,
-                        imageUrl: 'https://i.ibb.co/wWjWy4H/vmcs-logo.png', //'https://i.ibb.co/Z2P2dn4/7WC-Logo.png',
+                        <button class="btn btn-danger" onclick="window.open('https://github.com/sa35577/ICS4U-FSE')"><i class="fab fa-github"></i> GitHub</button>
+                    </div>
+                `
+                Swal.fire({
+                    title: 'Game Creator & Player',
+                    html: msg,
+                    showCloseButton: true,
+                    showConfirmButton: false,
+                    imageUrl: 'https://i.ibb.co/1QfggWG/ICS4UFSE.png',
 
-                        imageHeight: 135,
-                        imageAlt: 'Custom image',
+                    imageHeight: 135,
+                    imageAlt: 'Custom image',
                     })
+            }
+            function executeCSClub() {
+                msg = `The CS Club at my high school has two main focuses: Competitive Programming and Web Development.
+                As the Senior Leader of this club, I create weekly content for the Grade 11 and 12 members of the club. These include
+                lessons in topics such as graph theory, dynamic programming, data structures, and many other algorithms.
+                I am also involved in making several practice problems and contests for participants to get experience with contests.
+                <br><br>
+                <div>
+                   <button class="btn btn-primary" onclick="window.open('https://www.youtube.com/channel/UC2kA44DuP5hsqAwRrYns2YA')">YouTube Channel</button>
+                   <button class="btn btn-danger" onclick="window.open('https://github.com/VMCSC/Senior')"><i class="fab fa-github"></i>&nbsp;GitHub Lessons</button>
+                </div>`
+                Swal.fire({
+                    title: 'Vincent Massey CS Club',
+                    html: msg,
+                    showCloseButton: true,
+                    showConfirmButton: false,
+                    imageUrl: 'https://i.ibb.co/wWjWy4H/vmcs-logo.png',
+
+                    imageHeight: 135,
+                    imageAlt: 'Custom image',
+                })
+            }
+            function executeCP() {
+                msg = "I like to apply my problem-solving skills in many ways, and competitive programming is one of my personal favorites!" +
+                        "<br> I have solved hundreds of problems on the <a href = \"https://dmoj.ca\" target = \"blank\">DMOJ</a> primarily using C/C++, Canada's most popular competitive programming online judge." +
+                        " Currently, I am a Candidate Master and ranked top 100 by points.<br><br>" + `
+                        <div>
+                            <button class="btn btn-primary" onclick="window.open('https://dmoj.ca/user/sa35577')">DMOJ Profile</button>
+                            <button class="btn btn-danger" onclick="window.open('https://github.com/sa35577/Competitive_Programming')"><i class="fab fa-github"></i> GitHub</button>
+                        </div>
+                        `
+                /*var w;
+                if (screen.width >= 600) {
+                    w = 700;
                 }
-            </script>
+                else {
+                    w = ~~(screen.width/3);
+                }*/
+                //var wi = toString(w) + 'px';
+                Swal.fire({
+                    title: 'Competitive Programming',
+                    html: msg,
+                    showCloseButton: true,
+                    showConfirmButton: false,
+                    imageUrl: 'https://static.dmoj.ca/static/icons/logo.d0dbdf0b98be.svg',
+                    imageWidth: 400,
+                    imageHeight: 110,
+                    imageAlt: 'Custom image',
+                    //width: wi
+                })
+            }
 
-            
-            
-            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">
-              <div class="column">
-                <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">
-                  <h3>Game Creator & Player</h3>
-                  <p>ICS4U FSE</p>
-                </div>
-              </div>
-            
-              <div class="column">
-                <div class="card" onclick="executeCP()" style = "background-color: lightblue;">
-                  <h3>Competitive Programming</h3>
-                  <p>Just a classic hobby.</p>
-                </div>
-              </div>
-              
-              <div class="column">
-                <div class="card" onclick="executeCSClub()" style="background-color: lightblue">
-                  <h3>CS Club</h3>
-                  <p>Senior Leader</p>
-                </div>
-              </div>
-              
-            </div>
-        <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">
-            <div class="column">
-                <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">
-                    <h3>7 Week Challenge</h3>
-                    <p>Logistics Executive</p>
-                </div>
-            </div>
+            function execute7WC() {
+                msg = `The first run of the 7 Week Challenge at my school involves 7 different CS-themed events. In order, these are the learnathon,
+                        algorithms, web developemnt, game development, hardware, crytographical hunt, and the MasseyHacks VII hackathon (Canada's oldest high school
+                        hackathon!). As an executive for the Logistics and a main content creator of the algorithms week, I am responsible for scheduling, creating
+                        lessons, distributing points to winners, and much more.
+                <br><br>
+                <div>
+                   <button class="btn btn-primary" onclick="window.open('https://7wc.vmcs.club/')">7WC</button>
+                   <button class="btn btn-danger" onclick="window.open('https://masseyhacks.ca/')">MasseyHacks</button>
+                </div>`
+                Swal.fire({
+                    title: 'Vincent Massey 7WC',
+                    html: msg,
+                    showCloseButton: true,
+                    showConfirmButton: false,
+                    imageUrl: 'https://i.ibb.co/Z2P2dn4/7WC-Logo.png',
+                    imageHeight: 135,
+                    imageAlt: 'Custom image',
+                })
+            }
+            function executeScienceOlympiad() {
+                /*
+                BLACK COLOR, background : black on swal
+                msg = `<p style = "color: white;">The Science Olympics / Science Olympiad Club runs weekly STEM-based team events to prepare participants for competitions. As a Lead of the club,
+                I am involved with brainstorming and designing the weekly challenges, posting any information about future competitions, and selecting participants for
+                invitation-only events. We've had over 50 people join our server, which makes the meetings thrilling.</p>
+                 */
+                msg = `The Science Olympics / Science Olympiad Club runs weekly STEM-based team events to prepare participants for competitions. As a Lead of the club,
+                I am involved with brainstorming and designing the weekly challenges, posting any information about future competitions, and selecting participants for
+                invitation-only events. We've had over 50 people join our server, which makes the meetings thrilling.
+                `
+                Swal.fire({
+                    title: 'Vincent Massey Science Olympics Club',
+                    html: msg,
+                    showCloseButton: true,
+                    showConfirmButton: false,
 
-            <div class="column">
-                <!--<div class="card" onclick="executeCP()" style = "background-color: lightblue;">
-                    <h3>Competitive Programming</h3>
-                    <p>Just a classic hobby.</p>
-                </div>-->
-            </div>
+                })
+            }
+            function executeAortta() {
+                msg = `Aortta is a project targeted towards users who have so many messaging applications that it gets unsustainable. Aortta is the all-in-one
+                       messaging web app meant for many people of today's world, supporting receiving and sending messages via Microsoft Teams, and Slack.
+                       I was mainly involved in getting the authentication working with text-message and password data, but performed a lot of smaller tasks with the
+                       backend of the project.
+                <br><br>
+                <div>
+                   <button class="btn btn-danger" onclick="window.open('https://github.com/NotMyLyfe/aortta')"><i class="fab fa-github"></i> GitHub</button>
+                   <button class="btn btn-primary" onclick="window.open('https://devpost.com/software/aortta')">Devpost</button>
+                </div>`
+                Swal.fire({
+                    title: 'Aortta - Getting to the heart of things',
+                    html: msg,
+                    showCloseButton: true,
+                    showConfirmButton: false,
+                })
+            }
+            function executePizzaParty() {
+                msg = `Lets say you have a party. As the host of the party, you can create a party on the Pizza Party app and invite people to that party. The party-goers
+                       then get to choose what toppings they like and dietary restrictions and the app will make an order that best suits all of the party-goers preferences.
+                       I worked on the backend, creating the program that helps determine the best share of the pizzas and also helped with the database setup.
+                <br><br>
+                <div>
+                   <button class="btn btn-danger" onclick="window.open('https://github.com/nithinmuthukumar/PizzaParty')"><i class="fab fa-github"></i> GitHub</button>
+                   <button class="btn btn-primary" onclick="window.open('https://devpost.com/software/pizza-party-zvfla0')">Devpost</button>
+                </div>`
+                Swal.fire({
+                    title: 'Pizza Party',
+                    html: msg,
+                    showCloseButton: true,
+                    showConfirmButton: false,
+                    imageUrl: 'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/000/852/669/datas/medium.png',
+                    imageHeight: 135,
+                    imageAlt: 'Custom image',
+                })
+            }
+            function executeSpaceBowl() {
+                msg = `Inspired by the Tron Series, Space Bowl is a game made with Unity and C# that tests a player's ability to shoot their shot at enemies and evade them
+                       as they become more challenging with quantity and resistance! I mainly worked on the graphical design on this project, which was really cool since
+                       it gave me lots of experience in working with different frames and templates. I also worked on some of the game physics to make it nice and smooth.
+                <br><br>
+                <div>
+                   <button class="btn btn-primary" onclick="window.open('https://devpost.com/software/space-bowl')">Devpost</button>
+                </div>`
+                Swal.fire({
+                    title: 'Space Bowl',
+                    html: msg,
+                    showCloseButton: true,
+                    showConfirmButton: false,
+                    imageUrl: 'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/000/785/992/datas/medium.png',
+                    imageHeight: 135,
+                    imageAlt: 'Custom image',
+                })
+            }
+            function executePaintProject() {
+                msg = `Ever feel like making something with a Beyblade theme? Well, this Beyblade Burst themed paint application is just for you! Made with Python and Pygame,
+                       this application allows for users to create paintings with optional music and backgrounds, and allows them to save and upload their pictures whenever they
+                       wish to do so. I completed this project on my own.
+                <br><br>
+                <div>
+                   <button class="btn btn-primary" onclick="window.open('https://github.com/sa35577/Paint-Project')"><i class="fab fa-github"></i> Github</button>
+                </div>`
+                Swal.fire({
+                    title: 'Paint Project',
+                    html: msg,
+                    showCloseButton: true,
+                    showConfirmButton: false,
 
-            <div class="column">
-                <!--<div class="card" onclick="executeCSClub()" style="background-color: lightblue">
-                    <h3>CS Club</h3>
-                    <p>Senior Leader</p>
-                </div>-->
-            </div>
+                })
+            }
 
-        </div>
-
-
-
-        <!---->
-        <div class = "container" style = "background-color:rgba(252, 110, 110, 0.8); min-width: 100vw;">
-            <section id = "projects" style = "min-height: 100vh; max-height: 100vh;">
-                <div style = "height: 10vh;"></div>
-                <div style = "height: 8vh;">
-                    <h1 style = "text-align: center;">Projects</h1>
-                </div>
-                <div class = "container" style = "height: 30vh;">
-                    <div class = "row" style = "padding-bottom: 0 !important; height: 30vh;">
-                        <div class = "card col" style = "background-color: rgb(230, 230, 230);">
-                            <div class = "card-body">
-                                <h5 class = "card-title">
-                                    Game Creator & Player
-                                </h5>
-                                <h6 class = "card-subtitle">
-                                    ICS4U FSE (2020)
-                                </h6>
-                                <p class = "card-text">
-                                    Application that allows to create top-down and platform games using Java. Inspired by <a href = "https://gamestarmechanic.com/">Gamestar Mechanic</a>.
-                                </p>
-                                <a href = "https://github.com/sa35577/ICS4U-FSE" class = "btn btn-primary">GitHub</a>
-                            </div>
+        </script>
+        <div class = "container-fluid text-center" style = "background-color:rgb(173,103,217); margin-left: auto; margin-right: auto; width: 90%;">
+            <section id = "Experience"  style = "font-size: calc(.85em + 0.7vw); font-weight: bold;" ><!--style = "font-size: calc(.85em + 1vw);-->
+                <div style = "height: 7vh;"></div>
+                <h1 style = "font-size: calc(.85em + 4vw);">Experience</h1>
+                Click on each tab to learn more about what it was like!
+                <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%; padding-top: 2vh;">
+                    <div class="column">
+                        <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">
+                            <h3>Game Creator & Player</h3>
+                            <h5>ICS4U FSE</h5>
                         </div>
-                        <div class = "card col" style = "background-color: rgb(230, 230, 230);">
-                            <div class = "card-body">
-                                <h5 class = "card-title">
-                                    Competitive Programming
-                                </h5>
-                                <p class = "card-text">
-                                    Solutions to problems on DMOJ, AtCoder, and Codeforces. Ranked top 200 by points on DMOJ. Written primarily in C++ and Python, along with some Java.
-                                </p>
-                                <a href = "https://github.com/sa35577/Competitive_Programming" class = "btn btn-primary">GitHub</a>
-                            </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card" onclick="executeCSClub()" style="background-color: lightblue">
+                            <h3>CS Club</h3>
+                            <h5>Senior Leader</h5>
                         </div>
-                        <div class = "card col" style = "background-color: rgb(230, 230, 230);">
-                            <div class = "card-body">
-                                <h5 class = "card-title">
-                                    QwikSearch
-                                </h5>
-                                <h6 class = "card-subtitle">
-                                    ICS3U FSE (2019)
-                                </h6>
-                                <p class = "card-text">
-                                    Worked with David Hui to create a website where files could be backed up and accessed using MongoDB. 
-                                </p>
-                                <a href = "https://github.com/BlazingAsher/ICS3U-FSE" class = "btn btn-primary">GitHub</a>
-                            </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card" onclick="executeCP()" style = "background-color: lightblue;">
+                            <h3>Competitive Programming</h3>
+                            <h5>Just a classic hobby.</h5>
                         </div>
                     </div>
                 </div>
-                <div class = "container" style = "height: 30vh; padding-bottom: 1vh;">
-                    <div class = "row" style = "padding-bottom: 0 !important; height: 30vh;">
-                        <div class = "card col" style = "background-color: rgb(230, 230, 230);">
-                            <div class = "card-body">
-                                <h5 class = "card-title">
-                                    Paint Project
-                                </h5>
-                                <h6 class = "card-subtitle">
-                                    ICS3U Midterm Assignment
-                                </h6>
-                                <p class = "card-text">
-                                    Application that mimics Microsoft Paint with a theme of Beyblade Burst.
-                                </p>
-                                <a href = "https://github.com/sa35577/Paint-Project" class = "btn btn-primary">GitHub</a>
-                            </div>
-                        </div>
-                        <div class = "card col" style = "background-color: rgb(230, 230, 230);">
-                            <div class = "card-body">
-                                <h5 class = "card-title">
-                                    Pizza Party
-                                </h5>
-                                <h6 class = "card-subtitle">
-                                    GrizzHacks Submission, 2019
-                                </h6>
-                                <p class = "card-text">
-                                    Worked with Nithin Muthukumar, Daniel Liu, and Aaron Cheng. Created an application using Swift and Python to submit flavours of pizza at a party so that the host can buy the minimum amount of pizzas possible.
-                                </p>
-                                <a href = "https://github.com/nithinmuthukumar/PizzaParty" class = "btn btn-primary">GitHub</a>
-                            </div>
-                        </div>
-                        <div class = "card col" style = "background-color: rgb(230, 230, 230);">
-                            <div class = "card-body">
-                                <h5 class = "card-title">
-                                    Personal Website
-                                </h5>
-                                <p class = "card-text">
-                                    Created this website from scratch using HTML, CSS, and JS.
-                                </p>
-                                <a href = "https://github.com/BlazingAsher/ICS3U-FSE" class = "btn btn-primary">GitHub</a>
-                            </div>
+
+                <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">
+                    <div class="column">
+                        <div class="card" onclick="execute7WC()" style = "background-color: lightblue;">
+                            <h3>7WC & MasseyHacks VII</h3>
+                            <h5>Logistics Executive</h5>
                         </div>
                     </div>
-                    
+
+                    <div class="column">
+                        <div class="card" onclick="executeScienceOlympiad()" style = "background-color: lightblue;">
+                            <h3>Science Olympics Club</h3>
+                            <h5>Club Leader</h5>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card" onclick="executeAortta()" style="background-color: lightblue">
+                            <h3>Aortta</h3>
+                            <h5>Hack the North 2020++ Submission</h5>
+                        </div>
+                    </div>
                 </div>
-                
+                <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">
+                    <div class="column">
+                        <div class="card" onclick="executePizzaParty()" style = "background-color: lightblue;">
+                            <h3>Pizza Party</h3>
+                            <h5>GrizzHacks IV Submission</h5>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card" onclick="executeSpaceBowl()" style = "background-color: lightblue;">
+                            <h3>Space Bowl</h3>
+                            <h5>MasseyHacks V Submission</h5>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card" onclick="executePaintProject()" style="background-color: lightblue">
+                            <h3>Paint Project</h3>
+                            <h5>ICS3U Midterm</h5>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
-        
+        <div style = "height: 10vh;"></div>
+        <div class = "container-fluid text-center" style = "color: white; margin-left: auto; margin-right: auto; margin-bottom: 5vh; width: 100%;">
+            <h1>Contact Me!</h1>
+            <a href = "https://www.facebook.com/sat.arora.165" target = "_blank"><i class = "fa fa-facebook-official" style = "color: white;"></i></a>
+            &nbsp;
+            <a href = "https://github.com/sa35577" target = "_blank"><i class = "fa fa-github" style = "color: white;"></i></a>
+            &nbsp;
+            <a href = "https://www.instagram.com/sat.arora.165/" target = "_blank"><i class = "fa fa-instagram" style = "color: white;"></i></a>
+            &nbsp;
+            <a href = "mailto:satarora.1228@gmail.com" target = "_blank"><i class = "fa fa-envelope" style = "color: white;"></i></a>
+            <br>
+            <br>
+            © 2021 - Sat Arora
+        </div>
         <script src = "script.js"></script> 
     </body>
 </html>
