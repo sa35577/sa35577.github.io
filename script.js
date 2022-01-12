@@ -1,15 +1,19 @@
 
-const typedTxt = document.getElementById('titleText');
+const typedTxt = document.getElementById('titleTextDesktop');
+//const typedTxtMobile = document.getElementById('titleTextMobile');
 
 
-const cursorSpan = document.querySelector('.cursor');   
 
-const sentences = ["Hello there, I'm Sat Arora!", "I'm a problem solver!", "I like making things!", "I like to talk to people!"];
+const cursorSpan = document.getElementById('cursorDesktop');
+const cursorSpanMobile = document.getElementById('cursorMobile');
+
+
+const sentences = ["to problem-solve!", "making things. :D", "to talk to people!", "to go bike riding."];
 const newDelay = 2500;
 const funnyTypeDelay = 100;
 const funnyEraseDelay = 50;
 
-const contestScores = ["56/60","85/100", "37/75","9/15","1st","1st","138/150"];
+//const contestScores = ["56/60","85/100", "37/75","9/15","1st","1st","138/150"];
 const contestNames = ["Canadian Senior Mathematics Contest", 
 "Euclid Mathematics Contest",
 "Canadian Computing Competition",
@@ -22,19 +26,26 @@ let arrIdx = 0, charIdx = 0;
 let score = 0;
 
 function funnyType() {
+    console.log(charIdx,arrIdx);
     if (charIdx < sentences[arrIdx].length) {
-        if (!cursorSpan.classList.contains('typing')) cursorSpan.classList.add('typing');
-        typedTxt.textContent += sentences[arrIdx].charAt(charIdx);
+        if (!cursorSpan.classList.contains('typing')) {
+            cursorSpan.classList.add('typing');
+            cursorSpanMobile.classList.add('typing');
+        }
+        document.getElementById('titleTextDesktop').innerHTML = sentences[arrIdx].substr(0,charIdx+1);
+        document.getElementById('titleTextMobile').innerHTML = sentences[arrIdx].substr(0,charIdx+1);
         ++charIdx;
+
         setTimeout(funnyType,funnyTypeDelay);
     }
     else {
         cursorSpan.classList.remove('typing');
+        cursorSpanMobile.classList.remove('typing');
         setTimeout(funnyErase,newDelay);
 
     }
 }
-/*thanks StackOverflow*/
+
 function arrowScroll(targ){
     document.querySelector(targ).scrollIntoView({
         behavior: 'smooth'
@@ -43,27 +54,29 @@ function arrowScroll(targ){
 
 function funnyErase() {
     if (charIdx > 0) {
-        if (!cursorSpan.classList.contains('typing')) cursorSpan.classList.add('typing');
-        typedTxt.textContent = sentences[arrIdx].substr(0,charIdx-1);
+        if (!cursorSpan.classList.contains('typing')) {
+            cursorSpan.classList.add('typing');
+            cursorSpanMobile.classList.add('typing');
+        }
+        document.getElementById('titleTextDesktop').innerHTML = sentences[arrIdx].substr(0,charIdx-1);
+        document.getElementById('titleTextMobile').innerHTML = sentences[arrIdx].substr(0,charIdx-1);
         --charIdx;
-        setTimeout(funnyErase,funnyEraseDelay); 
+
+        setTimeout(funnyErase,funnyEraseDelay);
     }
     else {
         cursorSpan.classList.remove('typing');
+        cursorSpanMobile.classList.remove('typing');
         ++arrIdx;
         arrIdx %= sentences.length;
-        setTimeout(funnyType,parseInt(newDelay/5));
+        setTimeout(funnyType,parseInt(funnyTypeDelay));
     }
-}  
+}
 
 
 
 document.addEventListener("DOMContentLoaded", function(e) {
-    setTimeout(funnyType,parseInt(newDelay/2));
-     
-    
-    
-    //document.getElementById('fermat').style.height = document.getElementById('fermat').style.width;
+    setTimeout(funnyType,parseInt(funnyTypeDelay));
 });
 
 

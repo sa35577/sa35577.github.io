@@ -14,48 +14,140 @@
     </head>
     
     
-    <body id = "body" style = "background-color: white;">
+    <body id = "body" style="background-color: black;">
         <section id = "headID" style = "background-color: black;">
-            <nav class = "navbar justify-content-center" >
+            <nav class = "navbar justify-content-center">
 
                 <script>
                     yes_js_login = function(loc) {
                         arrowScroll(loc);
-                    } 
+                    }
                 </script>
                 <div class = "links" style = "text-align: center;">
                     <a href="#headID" onclick="yes_js_login('#headID'); return false;" class = "nav-link">Home</a>
                     <a href="#AboutMe" onclick="yes_js_login('#AboutMe'); return false;" class = "nav-link">About Me</a>
                     <a href = "#Contests" onclick="yes_js_login('#Contests'); return false;" class = "nav-link">Contests</a>
+                    <a href = "#Projects" onclick="yes_js_login('#Projects'); return false;" class = "nav-link">Projects</a>
                     <a href = "#Experience" onclick="yes_js_login('#Experience'); return false;" class = "nav-link">Experience</a>
                     <a href = "#Contact" onclick="yes_js_login('#Contact'); return false;" class = "nav-link">Contact</a>
                     <a href = "resume.pdf" class = "nav-link" target = "_blank">Resume</a>
                 </div>
             </nav>
-            <div class = "typewriter"><!--1vh-->
+            <div style="align-items: center; alignment: center; padding-top: 20vh;">
+                <img alt = "Profile photo of Sat Arora." src= "Images/profile.png" class = "img-fluid profile-photo" style = "margin-left: auto; margin-right: auto; height: 30vh; width: 30vh; margin-top: 0vh;">
+            </div>
+            <div id ="beginning-desktop">
+                <h1 class = "typewriterHeader" style = "margin-top: 3vh; font-size: calc(.85em + 3vw);">
+                    Hi, I'm Sat Arora.<br> I like
+                    <span id = "titleTextDesktop" class = "titleText" style="font-weight: bolder; color: #aff3ff"></span>
+                    <span id = "cursorDesktop" class = "cursor">&nbsp</span></h1>
+            </div>
+            <div id="beginning-mobile" style="padding-top: 3vh;">
+                <div>
+                    <h1 class = "typewriterHeader" style = "font-size: calc(1.25em + 3vw);">
+                        Hi, I'm Sat Arora.<br> I like
+                        <span id = "titleTextMobile" class = "titleText" style="font-weight: bolder; color: #aff3ff"></span>
+                        <span id = "cursorMobile" class = "cursor">&nbsp</span></h1>
+                </div>
+
+            </div>
+            <!--<div class = "typewriter">
                 <h1 id = "typewriterHeader" style = "margin-top: 6vh; font-size: calc(.85em + 5vw);">
                     <span id = "titleText"></span>
                     <span class = "cursor">&nbsp</span></h1>
+            </div>-->
+            <!--
+            <div id="beginning-desktop">
+                <div class = "row" style = "padding-top: 15vh;">
+                    <div class = "col-6">
+                        <img alt = "Profile photo of Sat Arora." src= "Images/profile2.png" class = "img-fluid profile-photo" style = "margin-left: auto; margin-right: auto; max-height: 75vh;">
+                    </div>
+                    <div class = "col-6" style="text-align: center">
+                        <div>
+                            <h1 class = "typewriterHeader" style = "margin-top: 6vh; font-size: calc(.85em + 3vw);">
+                                <span id = "titleTextDesktop" class = "titleText" style="font-weight: bolder;">Sat Arora<br> I like  </span>
+                                <span id = "cursorDesktop" class = "cursor">&nbsp</span></h1>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class = "container" style = "padding-top: 3vh; ">
-                <img alt = "Profile photo of Sat Arora." src= "Images/profile.png" class = "img-fluid profile-photo" style = "margin-left: auto; margin-right: auto; height: 30vh; width: 30vh;">
-            </div>
+            <div id="beginning-mobile" style="padding-top: 15vh;">
+                <img alt = "Profile photo of Sat Arora." src= "Images/profile.png" class = "img-fluid profile-photo" style = "margin-left: auto; margin-right: auto; height: 30vh; width: 30vh; margin-top: 15vh;">
+                <div>
+                    <h1 class = "typewriterHeader" style = "font-size: calc(.85em + 3vw); padding-top: 3vh;">
+                        <span id = "titleTextMobile" class = "titleText" style="font-weight: bold;">Sat Arora<br> I like  </span>
+                        <span id = "cursorMobile" class = "cursor">&nbsp</span></h1>
+                </div>
+
+            </div>-->
             <div class = "downBtn">
                 <a href = "javascript:void(0)" onclick = "arrowScroll('#AboutMe')"><i class="fas fa-angle-down"></i></a>
             </div>
         </section>
-        <div class = "container-fluid text-center" style = "background-color:rgba(110, 207, 252, 0.8); margin-left: auto; margin-right: auto; width: 90%;">
-            <section id = "AboutMe">
-                <div style = "height: 7vh;"></div>
-                <h1 style = "font-size: calc(.85em + 4vw);">About Me</h1>
-                <div class = "container" style = "font-size: calc(.85em + 1vw); font-weight: bold;">
+        <section id = "AboutMe" class="container-fluid" style = "background-color: #5cdb95;">
+            <div id="about-desktop" style="font-size: calc(.5em + 1vw);">
+                <div style = "height: 6vh;"></div>
+                <h1 style = "font-size: calc(.85em + 4vw); text-align: center;">About Me</h1>
+                <div class="container d-flex flex-column">
+                <div class = "row" style = "padding-top: 6vh;">
+                    <div class = "col-6 d-flex ">
+                        <img alt = "Profile photo of Sat Arora." src= "Images/profile2.png" class = "img-fluid profile-photo">
+                    </div>
+                    <div class = "col-6 d-flex flex-column" >
+                        <h4 style="font-size: 150%;">Great to meet you!</h4>
+                        I am a 1st year Computer Science Student at the University of Waterloo.
+                        I love to make code and see how a computer can translate it into something useful.<br><br>
+                        In the past year, I have been a:<br><br>
+                        <div style="font-style: italic;">
+                        <div class="alert alert-primary">
+                            Class Representative @UWCSC
+                        </div>
+                        <div class="alert alert-danger">
+                            Senior Teacher @VMCS
+                        </div>
+                        <div class="alert alert-primary">
+                            Leader @VMSS Science Olympiad
+                        </div>
+                        <div class="alert alert-danger">
+                            Administrator @ATL
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class = "container text-center" style="padding-bottom: 20vh;">
+                    <p>I'm not much of an athlete, but I do like to take some time to
+                        pursue my recreational hobbies: ping pong, biking, chess, and tennis.
+                        Although I have went to some competitions such as WECSSAA for tennis and swimming
+                        as well as OHSCC and CYCC for chess, these activities help me more in developing
+                        friendships that I have kept to this day :)</p>
+                </div>
+                <!--<section class="text-center" style="margin-bottom: 10vh; background-color: pink; padding-left: 0; margin-left: 0;">
+                    <h2>Programming Languages:</h2>
+                    <span class = "pillBtn">C++</span>
+                    <span class = "pillBtn">Python</span>
+                    <span class = "pillBtn">Java</span>
+                    <span class = "pillBtn">HTML/CSS</span>
+                    <span class = "pillBtn">JavaScript</span>
+                    <span class = "pillBtn">C#</span>
+                    <span class = "pillBtn">SQL</span>
+                    <h2>Technologies I've Used:</h2>
+                    <span class = "pillBtn pill2">Firebase</span>
+                    <span class = "pillBtn pill2">MongoDB</span>
+                    <span class = "pillBtn pill2">Vue</span>
+                    <span class = "pillBtn pill2">React</span>
+                    <span class = "pillBtn pill2">Unity</span>
+                    <span class = "pillBtn pill2">Visual Studio Code</span>
+                    <span class = "pillBtn pill2">JetBrains</span>
+                    <span class = "pillBtn pill2">IDLE</span>
+                </section>-->
+
+                <!--<div class = "container" style = "text-align: center; font-size: calc(.85em + 1vw); margin-top: 1vh;">
                     <div class = "row">
                         <div class = "col-lg">
-                            Great to meet you! I am a 1st year Computer Science Student at the University of Waterloo.
-                            I love to make code and see how a computer can translate it into something useful.<br><br><br>
-                            I can program in
+
                             <div class = "d-flex justify-content-center" style = "flex-wrap: nowrap;">
-                                <img class = "img-fluid" style = " margin-right: 2vw ;" src = "Images/cppLogo.png"> 
+                                <img class = "img-fluid" style = " margin-right: 2vw ;" src = "Images/cppLogo.png">
                                 <img class = "img-fluid" style = " margin-left: 2vw ; margin-right: 2vw ;" src = "Images/javaLogo.png">
                                 <img class = "img-fluid" style = " margin-left: 2vw ;" src = "Images/pythonLogo.png">
                             </div>
@@ -63,13 +155,13 @@
                             and a bunch of others!
                         </div>
                     </div>
-                </div>
-                <div class = "container" style = "font-size: calc(.85em + 1vw); font-weight: bold;">
+                </div>-
+                <div class = "container" style = "font-size: calc(.85em + 1vw);">
                     <div class = "row" >
                         <div class = "col-lg" >
                             And on the side, I like to play
                             <div class = "d-flex justify-content-center" style = "flex-wrap: nowrap;">
-                                <img style = " margin-right: 2vw ;" src = "Images/pingpongLogo.png"> 
+                                <img style = " margin-right: 2vw ;" src = "Images/pingpongLogo.png">
                                 <img style = " margin-left: 2vw ; margin-right: 2vw ;" src = "Images/chessLogo.png">
                                 <img style = " margin-left: 2vw ;" src = "Images/tennisLogo.png">
                             </div>
@@ -77,61 +169,204 @@
                             along with more problem-solving puzzles.
                         </div>
                     </div>
-                </div>
-            </section>
-        </div>
-        <div style = "height: 30vh;"></div>
-        <div class = "container-fluid text-center" style = "background-color:rgba(110,252,153,0.8); margin-left: auto; margin-right: auto; width: 90%;">
-            <section id = "Contests"  style = "font-size: calc(.85em + 1vw); font-weight: bold;">
-                <div style = "height: 7vh;"></div>
-                <h1 style = "font-size: calc(.85em + 4vw);">Contests</h1>
-                I like to write a lot of Math and Computer Science contests. This is because the problem solving skills required to achieve a high score stimulate my brain,
-                and I loved doing them ever since I was in elementary school. I feel that I invest a lot of time into contest preparation, so here are the scores I 
-                have gotten on some of them! 
-                <div id="contestCarousel" class="carousel slide" data-ride="carousel">
-                    <ol class = "carousel-indicators">
-                        <li data-target="#contestCarousel" data-slide-to="0" class = "active"></li>
-                        <li data-target="#contestCarousel" data-slide-to="1"></li>
-                        <li data-target="#contestCarousel" data-slide-to="2"></li>
-                        <li data-target="#contestCarousel" data-slide-to="3"></li>
-                        <li data-target="#contestCarousel" data-slide-to="4"></li>
-
-                    </ol>
-                    <div class="carousel-inner" style = "height: 25vh;">
-                        <div class="carousel-item active">
-                            <h1>56/60</h1>
-                            <p class="d-block w-100">2020 Canadian Senior Mathematics Contest<br>Unviersity of Waterloo</p>
-                        </div>
-                        <div class="carousel-item">
-                            <h1>85/100</h1>
-                            <p class="d-block w-100">2019 Euclid Mathematics Contest<br>Unviersity of Waterloo</p>
-                        </div>
-                        <div class="carousel-item">
-                            <h1>37/75</h1>
-                            <p class="d-block w-100">2020 Canadian Computing Competition<br>Unviersity of Waterloo</p>
-                        </div>
-                        <div class="carousel-item">
-                            <h1>1st Place</h1>
-                            <p class="d-block w-100">2019 Secondary School Programming Competition<br>University of Windsor</p>
-                        </div>
-                        <div class="carousel-item">
-                            <h1>9/15</h1>
-                            <p class="d-block w-100">2020 American Invitaitonal Mathematics Exam<br>Mathematical Association of America</p>
-                        </div>
-
+                </div>-->
+            </div>
+            <div id="about-mobile" style="font-size: calc(.5em + 1.5vw);">
+                    <div style = "height: 7vh;"></div>
+                    <h1 style = "font-size: calc(.85em + 4vw); text-align: center;">About Me</h1>
+                    <div class="container text-center">
+                        <h4 style="font-size: 150%;">Great to meet you!</h4>
+                            I am a 1st year Computer Science Student at the University of Waterloo.
+                            I love to make code and see how a computer can translate it into something useful.
+                            In the past year, I have been a:<br><br>
+                            <div style="font-style: italic; display: inline-block;" >
+                                <div class="alert alert-primary">
+                                    Class Representative @UWCSC
+                                </div>
+                                <div class="alert alert-danger">
+                                    Senior Teacher @VMCS
+                                </div>
+                                <div class="alert alert-primary">
+                                    Leader @VMSS Science Olympiad
+                                </div>
+                                <div class="alert alert-danger">
+                                    Administrator @ATL
+                                </div>
+                            </div>
                     </div>
-                    <a class="carousel-control-prev" data-target="#contestCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" style = "cursor: pointer;"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" data-target="#contestCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" style = "cursor: pointer;"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class = "container text-center" style="padding-bottom: 10vh;">
+                        <p>I'm not much of an athlete, but I do like to take some time to
+                            pursue my recreational hobbies: ping pong, biking, chess, and tennis.
+                            Although I have went to some competitions such as WECSSAA for tennis and swimming
+                            as well as OHSCC and CYCC for chess, these activities help me more in developing
+                            friendships that I have kept to this day :)</p>
+                    </div>
+                    <!--<div class="container text-center" style="margin: 10vh 0;">
+                        <h2>Programming Languages:</h2>
+                        <span class = "pillBtn ">C++</span>
+                        <span class = "pillBtn">Python</span>
+                        <span class = "pillBtn">Java</span>
+                        <span class = "pillBtn">HTML/CSS</span>
+                        <span class = "pillBtn">JavaScript</span>
+                        <span class = "pillBtn">C#</span>
+                        <span class = "pillBtn">SQL</span>
+                        <h2>Technologies I've Used:</h2>
+                        <span class = "pillBtn pill2">Firebase</span>
+                        <span class = "pillBtn pill2">MongoDB</span>
+                        <span class = "pillBtn pill2">Vue</span>
+                        <span class = "pillBtn pill2">React</span>
+                        <span class = "pillBtn pill2">Unity</span>
+                        <span class = "pillBtn pill2">Visual Studio Code</span>
+                        <span class = "pillBtn pill2">JetBrains</span>
+                        <span class = "pillBtn pill2">IDLE</span>
+                    </div>-->
+            </div>
+        </section>
+
+        <section id="pills">
+            <div id="pillDiv" class="text-center" style="background-color: #05386b; color: #edf5e1;">
+                <h2>Programming Languages:</h2>
+                <span class = "pillBtn">C++</span>
+                <span class = "pillBtn">Python</span>
+                <span class = "pillBtn">Java</span>
+                <span class = "pillBtn">HTML</span>
+                <span class = "pillBtn">CSS</span>
+                <span class = "pillBtn">JavaScript</span>
+                <span class = "pillBtn">C#</span>
+                <span class = "pillBtn">SQL</span>
+                <h2 style="padding-top: 3vh;">Technologies:</h2>
+                <span class = "pillBtn pill2">Firebase</span>
+                <span class = "pillBtn pill2">MongoDB</span>
+                <span class = "pillBtn pill2">Vue</span>
+                <span class = "pillBtn pill2">React</span>
+                <span class = "pillBtn pill2">Pygame</span>
+                <span class = "pillBtn pill2">Unity</span>
+                <span class = "pillBtn pill2">Visual Studio Code</span>
+                <span class = "pillBtn pill2">JetBrains</span>
+
+            </div>
+        </section>
+
+        <section id = "Contests" class="container-fluid text-center" style = "font-size: calc(.85em + 1vw); background-color : #379683;">
+            <div style = "height: 6vh;"></div>
+            <h1 style = "font-size: calc(.85em + 4vw);">Contests</h1>
+            <div style = "height: 6vh;"></div>
+            I like to write a lot of Math and Computer Science contests. This is because the problem solving skills required to achieve a high score stimulate my brain,
+            and I loved doing them ever since I was in elementary school. I feel that I invest a lot of time into contest preparation, so here are the scores I
+            have gotten on some of them!
+            <div id="contestCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class = "carousel-indicators">
+                    <li data-target="#contestCarousel" data-slide-to="0" class = "active"></li>
+                    <li data-target="#contestCarousel" data-slide-to="1"></li>
+                    <li data-target="#contestCarousel" data-slide-to="2"></li>
+                    <li data-target="#contestCarousel" data-slide-to="3"></li>
+                    <li data-target="#contestCarousel" data-slide-to="4"></li>
+                    <li data-target="#contestCarousel" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner" style="align-items: center;">
+                    <div class="carousel-item active" >
+                        <div class = "container mx-auto" style = "margin: 10vh 10vw;">
+                            <div class = "row align-items-center" style="padding: 0;">
+                                <div class = "col-5">
+                                    <h1 style="font-size: calc(.85em + 2vw);">56/60</h1>
+                                </div>
+                                <div class = "col-7" >
+                                    <h5 style="font-size: calc(.5em + 1vw);">Canadian Senior Mathematics Contest</h5>
+                                    <h6 style="font-size: calc(.5em + 0.75vw);">Placed 22nd internationally (2020)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class = "container mx-auto" style = "margin: 10vh 10vw;">
+                            <div class = "row align-items-center" style="padding: 0;">
+                                <div class = "col-5">
+                                    <h1 style="font-size: calc(.85em + 2vw);">85/100</h1>
+                                </div>
+                                <div class = "col-7" >
+                                    <h5 style="font-size: calc(.5em + 1vw);">Euclid Mathematics Contest</h5>
+                                    <h6 style="font-size: calc(.5em + 0.75vw);">Placed 402nd internationally (2019)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class = "container mx-auto" style = "margin: 10vh 10vw;">
+                            <div class = "row" style="padding: 0;">
+                                <div class = "col-6">
+                                    <h1>85/100</h1>
+                                </div>
+                                <div class = "col-6" >
+                                    <h5>Euclid Mathematics Contest</h5>
+                                    <h6>Placed 402nd internationally (2019)</h6>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="carousel-item">
+                        <div class = "container mx-auto" style = "margin: 10vh 10vw;">
+                            <div class = "row align-items-center" style="padding: 0;">
+                                <div class = "col-5">
+                                    <h1 style="font-size: calc(.75em + 2vw);">37,45/75</h1>
+                                </div>
+                                <div class = "col-7" >
+                                    <h5 style="font-size: calc(.5em + 1vw);">Canadian Computing Competition</h5>
+                                    <h6 style="font-size: calc(.5em + 0.75vw);">Honour Roll (2020)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class = "container mx-auto" style = "margin: 10vh 10vw;">
+                            <div class = "row align-items-center" style="padding: 0;">
+                                <div class = "col-5">
+                                    <h1 style="font-size: calc(.85em + 2vw);">1st Place</h1>
+                                </div>
+                                <div class = "col-7" >
+                                    <h5 style="font-size: calc(.5em + 1vw);">Secondary School Programming Competition</h5>
+                                    <h6 style="font-size: calc(.5em + 0.75vw);">University of Windsor (2019)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class = "container mx-auto" style = "margin: 10vh 10vw;">
+                            <div class = "row align-items-center" style="padding: 0;">
+                                <div class = "col-5">
+                                    <h1 style="font-size: calc(.85em + 2vw);">9/15</h1>
+                                </div>
+                                <div class = "col-7" >
+                                    <h5 style="font-size: calc(.5em + 1vw);">American Invitational Mathematics Exam</h5>
+                                    <h6 style="font-size: calc(.5em + 0.75vw);">Mathematical Association of America (2020)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class = "container mx-auto" style = "margin: 10vh 10vw;">
+                            <div class = "row align-items-center" style="padding: 0;">
+                                <div class = "col-5">
+                                    <h1 style="font-size: calc(.85em + 2vw);">138/150</h1>
+                                </div>
+                                <div class = "col-7" >
+                                    <h5 style="font-size: calc(.5em + 1vw);">Fermat Mathematics Contest</h5>
+                                    <h6 style="font-size: calc(.5em + 0.75vw);">Placed 138th internationally (2020)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </section>
-        </div>
-        <div style = "height: 30vh;"></div>
+                <a class="carousel-control-prev" data-target="#contestCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" style = "cursor: pointer;"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" data-target="#contestCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" style = "cursor: pointer;"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+<!--        <div style = "height: 30vh;"></div>-->
 
 
         <style>
@@ -169,8 +404,6 @@
               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
               padding: 16px;
               text-align: center;
-              background-color: #f1f1f1;
-              cursor: pointer;
             }
         </style>
   
@@ -342,82 +575,416 @@
 
                 })
             }
-
         </script>
-        <div class = "container-fluid text-center" style = "background-color:rgb(173,103,217); margin-left: auto; margin-right: auto; width: 90%;">
-            <section id = "Experience"  style = "font-size: calc(.85em + 0.7vw); font-weight: bold;" ><!--style = "font-size: calc(.85em + 1vw);-->
-                <div style = "height: 7vh;"></div>
-                <h1 style = "font-size: calc(.85em + 4vw);">Experience</h1>
-                Click on each tab to learn more about what it was like!
-                <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%; padding-top: 2vh;">
-                    <div class="column">
-                        <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">
-                            <h3>Game Creator & Player</h3>
-                            <h5>ICS4U FSE</h5>
+        <section class = "container-fluid text-center" id = "Projects"  style = " background-color:#8ee4af;" >
+            <div style = "height: 6vh;"></div>
+            <h1 style = "font-size: calc(.85em + 4vw);">Projects</h1>
+            <div style = "height: 6vh;"></div>
+            <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                <div class="col-4">
+                    <div class="card row1">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Game Creator & Player</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">Final Evaluation - Grade 12 CS</h1>
+
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto;">
+
                         </div>
                     </div>
+                </div>
+                <div class="col-4">
+                    <div class="card row1">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">FocusCord</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">Hack the North 2021</h1>
 
-                    <div class="column">
-                        <div class="card" onclick="executeCSClub()" style="background-color: lightblue">
-                            <h3>CS Club</h3>
-                            <h5>Senior Leader</h5>
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto;">
+
                         </div>
                     </div>
+                </div>
+                <div class="col-4">
+                    <div class="card row1" onclick="executeCP()">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Competitive Programming</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">Just a Classic Hobby</h1>
 
-                    <div class="column">
-                        <div class="card" onclick="executeCP()" style = "background-color: lightblue;">
-                            <h3>Competitive Programming</h3>
-                            <h5>Just a classic hobby.</h5>
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            <img src="Images/cppLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                            <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+
                         </div>
                     </div>
                 </div>
 
-                <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">
-                    <div class="column">
-                        <div class="card" onclick="execute7WC()" style = "background-color: lightblue;">
-                            <h3>7WC & MasseyHacks VII</h3>
-                            <h5>Logistics Executive</h5>
-                        </div>
-                    </div>
+            </div>
+            <div style="height: 6vh;"></div>
+            <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                <div class="col-4">
+                    <div class="card row2">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Dropcase: Broadening Horizons</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">The GoldenHack 3.0</h1>
 
-                    <div class="column">
-                        <div class="card" onclick="executeScienceOlympiad()" style = "background-color: lightblue;">
-                            <h3>Science Olympics Club</h3>
-                            <h5>Club Leader</h5>
                         </div>
-                    </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto;">
 
-                    <div class="column">
-                        <div class="card" onclick="executeAortta()" style="background-color: lightblue">
-                            <h3>Aortta</h3>
-                            <h5>Hack the North 2020++ Submission</h5>
                         </div>
                     </div>
                 </div>
-                <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">
-                    <div class="column">
-                        <div class="card" onclick="executePizzaParty()" style = "background-color: lightblue;">
-                            <h3>Pizza Party</h3>
-                            <h5>GrizzHacks IV Submission</h5>
-                        </div>
-                    </div>
+                <div class="col-4">
+                    <div class="card row2" onclick="executeSpaceBowl()">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Space Bowl</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">MasseyHacks V</h1>
 
-                    <div class="column">
-                        <div class="card" onclick="executeSpaceBowl()" style = "background-color: lightblue;">
-                            <h3>Space Bowl</h3>
-                            <h5>MasseyHacks V Submission</h5>
                         </div>
-                    </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto;">
 
-                    <div class="column">
-                        <div class="card" onclick="executePaintProject()" style="background-color: lightblue">
-                            <h3>Paint Project</h3>
-                            <h5>ICS3U Midterm</h5>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+                <div class="col-4">
+                    <div class="card row2" onclick="executeSpaceBowl()">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Aortta</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">Hack the North 2020++</h1>
+
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto;">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div style="height: 6vh;"></div>
+            <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                <div class="col-4">
+                    <div class="card row3" onclick="executePizzaParty()">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Pizza Party</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">GrizzHacks IV</h1>
+
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                            <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card row3" onclick="executePaintProject()">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Beyblade-Themed Paint</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">Midterm - Grade 11 CS</h1>
+
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                            <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card row3" onclick="">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Tron Lightcycles</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">Midterm - Grade 12 CS</h1>
+
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                            <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style = "height: 6vh;"></div>
+
+<!--            <div style = "height: 6vh;"></div>-->
+<!--            <div class="card-deck" style="">-->
+<!--                <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">-->
+<!--                    <h3>Game Creator & Player</h3>-->
+<!--                    <h5>ICS4U FSE</h5>-->
+<!--                </div>-->
+<!--                <div class="card" onclick="executeCSClub()" style="background-color: lightblue">-->
+<!--                    <h3>CS Club</h3>-->
+<!--                    <h5>Senior Leader</h5>-->
+<!--                </div>-->
+<!--                <div class="card" onclick="executeCP()" style = "background-color: lightblue;">-->
+<!--                    <h3>Competitive Programming</h3>-->
+<!--                    <h5>Just a classic hobby.</h5>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%; padding-top: 2vh;">-->
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">-->
+<!--                        <h3>Game Creator & Player</h3>-->
+<!--                        <h5>ICS4U FSE</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executeCSClub()" style="background-color: lightblue">-->
+<!--                        <h3>CS Club</h3>-->
+<!--                        <h5>Senior Leader</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executeCP()" style = "background-color: lightblue;">-->
+<!--                        <h3>Competitive Programming</h3>-->
+<!--                        <h5>Just a classic hobby.</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">-->
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="execute7WC()" style = "background-color: lightblue;">-->
+<!--                        <h3>7WC & MasseyHacks VII</h3>-->
+<!--                        <h5>Logistics Executive</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executeScienceOlympiad()" style = "background-color: lightblue;">-->
+<!--                        <h3>Science Olympics Club</h3>-->
+<!--                        <h5>Club Leader</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executeAortta()" style="background-color: lightblue">-->
+<!--                        <h3>Aortta</h3>-->
+<!--                        <h5>Hack the North 2020++ Submission</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">-->
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executePizzaParty()" style = "background-color: lightblue;">-->
+<!--                        <h3>Pizza Party</h3>-->
+<!--                        <h5>GrizzHacks IV Submission</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executeSpaceBowl()" style = "background-color: lightblue;">-->
+<!--                        <h3>Space Bowl</h3>-->
+<!--                        <h5>MasseyHacks V Submission</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executePaintProject()" style="background-color: lightblue">-->
+<!--                        <h3>Paint Project</h3>-->
+<!--                        <h5>ICS3U Midterm</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </section>
+        <section class = "container-fluid text-center" id = "Experience"  style = " background-color:#edf5e1;" >
+            <div style = "height: 6vh;"></div>
+            <h1 style = "font-size: calc(.85em + 4vw);">Experience</h1>
+            <div style = "height: 6vh;"></div>
+            Click on each tab to learn more about what it was like!
+            <!--           <div class = "container w-100 mx-auto" style="margin: 0; padding: 0;">&ndash;&gt;-->
+            <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                <div class="col-4">
+                    <div class="card row4" onclick="execute7WC()">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Logistics Executive</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">MasseyHacks VII / 7 Week Challenge</h1>
+
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card row4" onclick="">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Class Representative</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">UW Computer Science Club</h1>
+
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card row4" onclick="executeCSClub()">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Senior Leader</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">Vincent Massey Computer Science Club</h1>
+
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            <img src="Images/cppLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                            <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div style="height: 6vh;"></div>
+            <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                <div class="col-4">
+                    <div class="card row5">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Administrator</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">Anup Trading Ltd.</h1>
+
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card row5" onclick="">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Mentor</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">CodeReach</h1>
+
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card row5" onclick="executeScienceOlympiad()">
+                        <div class="cardContent">
+                            <div style="margin-top: 26%"></div>
+                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Club Leader</h1>
+                            <h1 style="font-weight: 300; font-size: calc(1vw);">Vincent Massey Science Olympics Club</h1>
+
+                        </div>
+                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div style="height: 6vh;"></div>
+
+
+<!--            <div style = "height: 6vh;"></div>-->
+<!--            <div class="card-deck" style="">-->
+<!--                <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">-->
+<!--                    <h3>Game Creator & Player</h3>-->
+<!--                    <h5>ICS4U FSE</h5>-->
+<!--                </div>-->
+<!--                <div class="card" onclick="executeCSClub()" style="background-color: lightblue">-->
+<!--                    <h3>CS Club</h3>-->
+<!--                    <h5>Senior Leader</h5>-->
+<!--                </div>-->
+<!--                <div class="card" onclick="executeCP()" style = "background-color: lightblue;">-->
+<!--                    <h3>Competitive Programming</h3>-->
+<!--                    <h5>Just a classic hobby.</h5>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%; padding-top: 2vh;">-->
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">-->
+<!--                        <h3>Game Creator & Player</h3>-->
+<!--                        <h5>ICS4U FSE</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executeCSClub()" style="background-color: lightblue">-->
+<!--                        <h3>CS Club</h3>-->
+<!--                        <h5>Senior Leader</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executeCP()" style = "background-color: lightblue;">-->
+<!--                        <h3>Competitive Programming</h3>-->
+<!--                        <h5>Just a classic hobby.</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">-->
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="execute7WC()" style = "background-color: lightblue;">-->
+<!--                        <h3>7WC & MasseyHacks VII</h3>-->
+<!--                        <h5>Logistics Executive</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executeScienceOlympiad()" style = "background-color: lightblue;">-->
+<!--                        <h3>Science Olympics Club</h3>-->
+<!--                        <h5>Club Leader</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executeAortta()" style="background-color: lightblue">-->
+<!--                        <h3>Aortta</h3>-->
+<!--                        <h5>Hack the North 2020++ Submission</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">-->
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executePizzaParty()" style = "background-color: lightblue;">-->
+<!--                        <h3>Pizza Party</h3>-->
+<!--                        <h5>GrizzHacks IV Submission</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executeSpaceBowl()" style = "background-color: lightblue;">-->
+<!--                        <h3>Space Bowl</h3>-->
+<!--                        <h5>MasseyHacks V Submission</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    <div class="card" onclick="executePaintProject()" style="background-color: lightblue">-->
+<!--                        <h3>Paint Project</h3>-->
+<!--                        <h5>ICS3U Midterm</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </section>
+
         <div style = "height: 10vh;"></div>
         <div id = "Contact" class = "container-fluid text-center" style = "color: white; margin-left: auto; margin-right: auto; margin-bottom: 5vh; width: 100%;">
             <h1>Contact Me!</h1>
@@ -430,7 +997,7 @@
             <a href = "mailto:satarora.1228@gmail.com" target = "_blank"><i class = "fa fa-envelope" style = "color: white;"></i></a>
             <br>
             <br>
-            © 2021 - Sat Arora
+            © 2022 - Sat Arora
         </div>
         <script src = "script.js"></script> 
     </body>
