@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 /*@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');*/
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
 
 html {
     font-size: 15px;
@@ -20,40 +21,36 @@ img {
     background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(178,98,225,1) 50%, rgba(0,212,255,1) 100%);
     */
 
-    font-family: 'Quicksand', sans-serif;
-    
+    /*font-family: 'Quicksand', sans-serif;
+     */
+    font-family: 'Roboto', sans-serif;
+    --green: green;
 }
 
 
 h1,h2,h3,h4,h5,h6 {
-    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #headID {
     --back : #ffffff;
     /*background-image : url("Images/back.jpg");*/
-    margin-bottom: 0;
-    padding-bottom: 0;
+
     min-height: 100vh;
     max-height: 100vh;
-
-
-    
     color:blue;
-
 }
 
 
-#typewriterHeader {
+.typewriterHeader {
     padding-top: 5vh;
     color : white;
     vertical-align: middle;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.profile-photo {
-   
-}
+
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.5);
@@ -65,13 +62,33 @@ h1,h2,h3,h4,h5,h6 {
     min-width: 100vw;
     z-index: 1;
     align-items: center;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+}
 
+.navbar-nav {
+    position: fixed;
+    right: 2vw;
+    top: 2vw;
+    padding-top: 0;
+    margin-top: 0;
+    min-width: 100vw;
+    z-index: 1;
+    align-items: right;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
 }
 
 .nav-link {
     color:white;
     display: inline-block;
     margin: 0;
+    padding-left: 0;
+    padding-right: 5vw;
+
+    max-font-size: 15px !important;
 }
 .links {
     float: none;
@@ -90,6 +107,45 @@ h1,h2,h3,h4,h5,h6 {
     
 
 }
+
+#beginning-desktop { display: block; }
+#beginning-mobile { display: none; }
+#about-desktop { display: block; }
+#about-mobile { display: none; }
+#projects-desktop { display: block; }
+#projects-mobile { display: none; }
+#experience-desktop { display: block; }
+#experience-mobile { display: none; }
+#navigation-desktop { display: block !important; }
+#navigation-mobile { display: none !important; }
+
+
+#pillDiv {
+    font-size: calc(.5em + 1vw);
+    padding: 10vh 0vh;
+}
+@media screen and (max-width: 666px) {
+    #beginning-desktop { display: none; }
+    #beginning-mobile { display: block; }
+    #projects-desktop { display: none; }
+    #projects-mobile { display: block; }
+    #experience-desktop { display: none; }
+    #experience-mobile { display: block; }
+    .card {
+        height: 50.625vw !important;
+    }
+
+}
+@media screen and (max-width: 992px) {
+    #about-desktop { display: none; }
+    #about-mobile { display: block; }
+    #pillDiv { font-size: calc(.5em + 1.5vw); }
+    #navigation-desktop { display: none !important; }
+    #navigation-mobile { display: block !important; }
+
+}
+
+
 
 .downBtn {
     position: absolute;
@@ -111,7 +167,7 @@ h1,h2,h3,h4,h5,h6 {
 .cursor {
     display: inline-block;
     width: 1px;
-    background-color: blue;
+    background-color: white;
     animation: blink 1s infinite;
 }
 .cursor.typing {
@@ -133,7 +189,62 @@ h1,h2,h3,h4,h5,h6 {
     
 }
 
+.pillBtn {
+    background-color: #8ee4af;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 15px;
+    font-size: 80%;
 
+}
+.pill2 {
+    background-color: #5cdb95;
+
+}
+
+.card {
+    border-radius: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 16.875vw;
+    background-color: #05386b;
+}
+
+.row1 {
+    background-color: #8E98E4; /*var(--green);*/
+}
+.row2 {
+    background-color: #E48EC3;
+}
+.row3 {
+    background-color: #E4AF8E;
+}
+
+.row4 {
+    background-color: #D37A83;
+}
+.row5 {
+    background-color: #9D7AD3;
+}
+
+.card:hover {
+    background-color: #0c5460;
+}
+
+.cardContent {
+    height: 75%;
+    color: #edf5e1;
+
+}
+
+.cardBottom {
+    height: 25%;
+    color: blue;
+}
 
 .fa {
     font-size: 200%;
@@ -157,3 +268,13 @@ h1,h2,h3,h4,h5,h6 {
 .fa-github {
     color: black;
 }
+.btn-circle {
+    width: 8vw;
+    height: 8vw;
+    padding: 1.2vw 0px;
+    border-radius: 4vw;
+    text-align: center;
+    font-size: calc(2vw);
+    line-height: 1.42857;
+}
+
