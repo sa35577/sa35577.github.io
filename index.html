@@ -16,23 +16,63 @@
     
     <body id = "body" style="background-color: black;">
         <section id = "headID" style = "background-color: black;">
-            <nav class = "navbar justify-content-center">
+            <div id="navigation-desktop">
+                <nav class = "navbar justify-content-center">
+                    <script>
+                        yes_js_login = function(loc) {
+                            arrowScroll(loc);
+                        }
+                    </script>
+                    <div class = "links" style = "text-align: center;">
+                        <a href="#headID" onclick="yes_js_login('#headID'); return false;" class = "nav-link">Home</a>
+                        <a href="#AboutMe" onclick="yes_js_login('#AboutMe'); return false;" class = "nav-link">About Me</a>
+                        <a href = "#Contests" onclick="yes_js_login('#Contests'); return false;" class = "nav-link">Contests</a>
+                        <a href = "#Projects" onclick="yes_js_login('#Projects'); return false;" class = "nav-link">Projects</a>
+                        <a href = "#Experience" onclick="yes_js_login('#Experience'); return false;" class = "nav-link">Experience</a>
+                        <a href = "#Contact" onclick="yes_js_login('#Contact'); return false;" class = "nav-link">Contact</a>
+                        <a href = "resume.pdf" class = "nav-link" target = "_blank" style="padding-right: 0;">Resume</a>
+                    </div>
+                </nav>
+            </div>
 
-                <script>
-                    yes_js_login = function(loc) {
-                        arrowScroll(loc);
-                    }
-                </script>
-                <div class = "links" style = "text-align: center;">
-                    <a href="#headID" onclick="yes_js_login('#headID'); return false;" class = "nav-link">Home</a>
-                    <a href="#AboutMe" onclick="yes_js_login('#AboutMe'); return false;" class = "nav-link">About Me</a>
-                    <a href = "#Contests" onclick="yes_js_login('#Contests'); return false;" class = "nav-link">Contests</a>
-                    <a href = "#Projects" onclick="yes_js_login('#Projects'); return false;" class = "nav-link">Projects</a>
-                    <a href = "#Experience" onclick="yes_js_login('#Experience'); return false;" class = "nav-link">Experience</a>
-                    <a href = "#Contact" onclick="yes_js_login('#Contact'); return false;" class = "nav-link">Contact</a>
-                    <a href = "resume.pdf" class = "nav-link" target = "_blank">Resume</a>
-                </div>
-            </nav>
+            <div id="navigation-mobile">
+                <nav class="navbar-nav">
+                    <div class="btn-group justify-content-end">
+                        <button id = "navbarBtn" type="button" class="btn-circle" data-toggle="dropdown">
+                            <i class="fa fa-list"></i>
+                        </button>
+                        <div class="links dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#headID" onclick="yes_js_login('#headID'); return false;" class = "nav-link">Home</a>
+                            <a class="dropdown-item" href="#AboutMe" onclick="yes_js_login('#AboutMe'); return false;" class = "nav-link">About Me</a>
+                            <a class="dropdown-item" href = "#Contests" onclick="yes_js_login('#Contests'); return false;" class = "nav-link">Contests</a>
+                            <a class="dropdown-item" href = "#Projects" onclick="yes_js_login('#Projects'); return false;" class = "nav-link">Projects</a>
+                            <a class="dropdown-item" href = "#Experience" onclick="yes_js_login('#Experience'); return false;" class = "nav-link">Experience</a>
+                            <a class="dropdown-item" href = "#Contact" onclick="yes_js_login('#Contact'); return false;" class = "nav-link">Contact</a>
+                            <a class="dropdown-item" href = "resume.pdf" class = "nav-link" target = "_blank" style="padding-right: 0;">Resume</a>
+
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+
+
+<!--            <div class="btn-group">-->
+<!--                <button type="button" class="btn btn-primary btn-circle btn-xl" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                    <i class="fa fa-list"></i>-->
+<!--                </button>-->
+<!--                <div class="dropdown-menu dropdown-menu-right">-->
+<!--                    <a class="dropdown-item" href="#headID" onclick="yes_js_login('#headID'); return false;" class = "nav-link">Home</a>-->
+<!--                    <a class="dropdown-item" href="#AboutMe" onclick="yes_js_login('#AboutMe'); return false;" class = "nav-link">About Me</a>-->
+<!--                    <a class="dropdown-item" href = "#Contests" onclick="yes_js_login('#Contests'); return false;" class = "nav-link">Contests</a>-->
+<!--                    <a class="dropdown-item" href = "#Projects" onclick="yes_js_login('#Projects'); return false;" class = "nav-link">Projects</a>-->
+<!--                    <a class="dropdown-item" href = "#Experience" onclick="yes_js_login('#Experience'); return false;" class = "nav-link">Experience</a>-->
+<!--                    <a class="dropdown-item" href = "#Contact" onclick="yes_js_login('#Contact'); return false;" class = "nav-link">Contact</a>-->
+<!--                    <a class="dropdown-item" href = "resume.pdf" class = "nav-link" target = "_blank" style="padding-right: 0;">Resume</a>-->
+
+<!--                </div>-->
+<!--            </div>-->
+
             <div style="align-items: center; alignment: center; padding-top: 20vh;">
                 <img alt = "Profile photo of Sat Arora." src= "Images/profile.png" class = "img-fluid profile-photo" style = "margin-left: auto; margin-right: auto; height: 30vh; width: 30vh; margin-top: 0vh;">
             </div>
@@ -247,7 +287,7 @@
             </div>
         </section>
 
-        <section id = "Contests" class="container-fluid text-center" style = "font-size: calc(.85em + 1vw); background-color : #379683;">
+        <section id = "Contests" class="container-fluid text-center" style = "font-size: calc(.5em + 1vw); background-color : #379683;">
             <div style = "height: 6vh;"></div>
             <h1 style = "font-size: calc(.85em + 4vw);">Contests</h1>
             <div style = "height: 6vh;"></div>
@@ -576,413 +616,513 @@
                 })
             }
         </script>
-        <section class = "container-fluid text-center" id = "Projects"  style = " background-color:#8ee4af;" >
-            <div style = "height: 6vh;"></div>
-            <h1 style = "font-size: calc(.85em + 4vw);">Projects</h1>
-            <div style = "height: 6vh;"></div>
-            <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
-                <div class="col-4">
-                    <div class="card row1">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Game Creator & Player</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">Final Evaluation - Grade 12 CS</h1>
+        <section class = "container-fluid text-center" id = "Projects"  style = " background-color:#8ee4af; padding-left: 0; padding-right: 0;" >
+            <div id="projects-desktop">
+                <div style = "height: 6vh;"></div>
+                <h1 style = "font-size: calc(.85em + 4vw);">Projects</h1>
+                <div style = "height: 6vh;"></div>
 
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-4">
+                        <div class="card row1">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Game Creator & Player</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">Final Evaluation - Grade 12 CS</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+    <!--                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">-->
+                                <img src="Images/javaLogo.png" style="height: 80%; width: auto;">
+
+                            </div>
                         </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto;">
+                    </div>
+                    <div class="col-4">
+                        <div class="card row1">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">FocusCord</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">Hack the North 2021</h1>
 
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/nodeLogo.svg" style="height: 80%; width: auto; padding-right: 4%;">
+                                <img src="Images/vueLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                                <img src="Images/electronLogo.png" style="height: 80%; width: auto;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card row1" onclick="executeCP()">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Competitive Programming</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">Just a Classic Hobby</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/cppLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                                <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="height: 6vh;"></div>
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-4">
+                        <div class="card row2">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Dropcase: Broadening Horizons</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">The GoldenHack 3.0</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card row2" onclick="executeSpaceBowl()">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Space Bowl</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">MasseyHacks V</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/cSharpLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                                <img src="Images/unityLogo.png" style="height: 80%; width: auto;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card row2" onclick="">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Aortta</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">Hack the North 2020++</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/sqlLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                                <img src="Images/reactLogo.svg" style="height: 80%; width: auto;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="height: 6vh;"></div>
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-4">
+                        <div class="card row3" onclick="executePizzaParty()">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Pizza Party</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">GrizzHacks IV</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/swiftLogo.png.crdownload" style="height: 80%; width: auto; padding-right: 4%;">
+                                <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card row3" onclick="executePaintProject()">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Beyblade-Themed Paint</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">Midterm - Grade 11 CS</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card row3" onclick="">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Tron Lightcycles</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">Midterm - Grade 12 CS</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card row1">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">FocusCord</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">Hack the North 2021</h1>
-
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto;">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card row1" onclick="executeCP()">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Competitive Programming</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">Just a Classic Hobby</h1>
-
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
-                            <img src="Images/cppLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
-                            <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
-
-                        </div>
-                    </div>
-                </div>
-
+                <div style = "height: 6vh;"></div>
             </div>
-            <div style="height: 6vh;"></div>
-            <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
-                <div class="col-4">
-                    <div class="card row2">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Dropcase: Broadening Horizons</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">The GoldenHack 3.0</h1>
+            <div id="projects-mobile">
+                <div style = "height: 6vh;"></div>
+                <h1 style = "font-size: calc(.85em + 4vw);">Projects</h1>
+                <div style = "height: 3vh;"></div>
 
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto;">
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-12">
+                        <div class="card row1">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(5.4vw);">Game Creator & Player</h1>
+                                <h1 style="font-weight: 300; font-size: calc(3vw);">Final Evaluation - Grade 12 CS</h1>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card row2" onclick="executeSpaceBowl()">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Space Bowl</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">MasseyHacks V</h1>
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <!--                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">-->
+                                <img src="Images/javaLogo.png" style="height: 80%; width: auto;">
 
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto;">
-
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card row2" onclick="executeSpaceBowl()">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Aortta</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">Hack the North 2020++</h1>
+                <div style="height: 3vh;"></div>
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-12">
+                        <div class="card row2">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(5.4vw);">FocusCord</h1>
+                                <h1 style="font-weight: 300; font-size: calc(3vw);">Hack the North 2021</h1>
 
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto;">
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/nodeLogo.svg" style="height: 80%; width: auto; padding-right: 4%;">
+                                <img src="Images/vueLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                                <img src="Images/electronLogo.png" style="height: 80%; width: auto;">
 
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div style="height: 3vh;"></div>
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-12">
+                        <div class="card row3" onclick="executeCP()">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(5.4vw);">Competitive Programming</h1>
+                                <h1 style="font-weight: 300; font-size: calc(3vw);">Just a Classic Hobby</h1>
 
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/cppLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                                <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id = "mobileProjectCollapse">
+                    <div style="height: 3vh;"></div>
+                    <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                        <div class="col-12">
+                            <div class="card row1">
+                                <div class="cardContent">
+                                    <div style="margin-top: 26%"></div>
+                                    <h1 style="font-weight: 300; font-size: calc(5.4vw);">Dropcase: Broadening Horizons</h1>
+                                    <h1 style="font-weight: 300; font-size: calc(3vw);">The GoldenHack 3.0</h1>
+
+                                </div>
+                                <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                    <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 3vh;"></div>
+                    <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                        <div class="col-12">
+                            <div class="card row2" onclick="executeSpaceBowl()">
+                                <div class="cardContent">
+                                    <div style="margin-top: 26%"></div>
+                                    <h1 style="font-weight: 300; font-size: calc(5.4vw);">Space Bowl</h1>
+                                    <h1 style="font-weight: 300; font-size: calc(3vw);">MasseyHacks V</h1>
+
+                                </div>
+                                <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                    <img src="Images/cSharpLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                                    <img src="Images/unityLogo.png" style="height: 80%; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 3vh;"></div>
+                    <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                        <div class="col-12">
+                            <div class="card row3" onclick="executeAortta()">
+                                <div class="cardContent">
+                                    <div style="margin-top: 26%"></div>
+                                    <h1 style="font-weight: 300; font-size: calc(5.4vw);">Aortta</h1>
+                                    <h1 style="font-weight: 300; font-size: calc(3vw);">Hack the North 2020++</h1>
+
+                                </div>
+                                <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                    <img src="Images/sqlLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                                    <img src="Images/reactLogo.svg" style="height: 80%; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 3vh;"></div>
+                    <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                        <div class="col-12">
+                            <div class="card row1" onclick="executePizzaParty()">
+                                <div class="cardContent">
+                                    <div style="margin-top: 26%"></div>
+                                    <h1 style="font-weight: 300; font-size: calc(5.4vw);">Pizza Party</h1>
+                                    <h1 style="font-weight: 300; font-size: calc(3vw);">GrizzHacks IV</h1>
+
+                                </div>
+                                <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                    <img src="Images/swiftLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                                    <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 3vh;"></div>
+                    <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                        <div class="col-12">
+                            <div class="card row2" onclick="executePaintProject()">
+                                <div class="cardContent">
+                                    <div style="margin-top: 26%"></div>
+                                    <h1 style="font-weight: 300; font-size: calc(5.4vw);">Beyblade-Themed Paint</h1>
+                                    <h1 style="font-weight: 300; font-size: calc(3vw);">Midterm - Grade 11 CS</h1>
+
+                                </div>
+                                <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                    <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 3vh;"></div>
+                    <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                        <div class="col-12">
+                            <div class="card row3">
+                                <div class="cardContent">
+                                    <div style="margin-top: 26%"></div>
+                                    <h1 style="font-weight: 300; font-size: calc(5.4vw);">Tron Lightcycles</h1>
+                                    <h1 style="font-weight: 300; font-size: calc(3vw);">Midterm - Grade 12 CS</h1>
+
+                                </div>
+                                <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                    <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end" style="margin-right: 15px; margin-top: 15px;">
+                    <a class="btn btn-outline-dark" id="experienceshowbtn" onclick="experienceShowMore()" data-toggle="collapse" href="#mobileProjectCollapse" role="button" aria-expanded="false" aria-controls="mobileProjectCollapse"></a>
+                </div>
+                <div style = "height: 6vh;"></div>
             </div>
-            <div style="height: 6vh;"></div>
-            <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
-                <div class="col-4">
-                    <div class="card row3" onclick="executePizzaParty()">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Pizza Party</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">GrizzHacks IV</h1>
-
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
-                            <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card row3" onclick="executePaintProject()">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Beyblade-Themed Paint</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">Midterm - Grade 11 CS</h1>
-
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
-                            <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card row3" onclick="">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Tron Lightcycles</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">Midterm - Grade 12 CS</h1>
-
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
-                            <img src="Images/javaLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
-                            <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style = "height: 6vh;"></div>
-
-<!--            <div style = "height: 6vh;"></div>-->
-<!--            <div class="card-deck" style="">-->
-<!--                <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">-->
-<!--                    <h3>Game Creator & Player</h3>-->
-<!--                    <h5>ICS4U FSE</h5>-->
-<!--                </div>-->
-<!--                <div class="card" onclick="executeCSClub()" style="background-color: lightblue">-->
-<!--                    <h3>CS Club</h3>-->
-<!--                    <h5>Senior Leader</h5>-->
-<!--                </div>-->
-<!--                <div class="card" onclick="executeCP()" style = "background-color: lightblue;">-->
-<!--                    <h3>Competitive Programming</h3>-->
-<!--                    <h5>Just a classic hobby.</h5>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%; padding-top: 2vh;">-->
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">-->
-<!--                        <h3>Game Creator & Player</h3>-->
-<!--                        <h5>ICS4U FSE</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executeCSClub()" style="background-color: lightblue">-->
-<!--                        <h3>CS Club</h3>-->
-<!--                        <h5>Senior Leader</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executeCP()" style = "background-color: lightblue;">-->
-<!--                        <h3>Competitive Programming</h3>-->
-<!--                        <h5>Just a classic hobby.</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">-->
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="execute7WC()" style = "background-color: lightblue;">-->
-<!--                        <h3>7WC & MasseyHacks VII</h3>-->
-<!--                        <h5>Logistics Executive</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executeScienceOlympiad()" style = "background-color: lightblue;">-->
-<!--                        <h3>Science Olympics Club</h3>-->
-<!--                        <h5>Club Leader</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executeAortta()" style="background-color: lightblue">-->
-<!--                        <h3>Aortta</h3>-->
-<!--                        <h5>Hack the North 2020++ Submission</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">-->
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executePizzaParty()" style = "background-color: lightblue;">-->
-<!--                        <h3>Pizza Party</h3>-->
-<!--                        <h5>GrizzHacks IV Submission</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executeSpaceBowl()" style = "background-color: lightblue;">-->
-<!--                        <h3>Space Bowl</h3>-->
-<!--                        <h5>MasseyHacks V Submission</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executePaintProject()" style="background-color: lightblue">-->
-<!--                        <h3>Paint Project</h3>-->
-<!--                        <h5>ICS3U Midterm</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
         </section>
         <section class = "container-fluid text-center" id = "Experience"  style = " background-color:#edf5e1;" >
-            <div style = "height: 6vh;"></div>
-            <h1 style = "font-size: calc(.85em + 4vw);">Experience</h1>
-            <div style = "height: 6vh;"></div>
-            Click on each tab to learn more about what it was like!
-            <!--           <div class = "container w-100 mx-auto" style="margin: 0; padding: 0;">&ndash;&gt;-->
-            <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
-                <div class="col-4">
-                    <div class="card row4" onclick="execute7WC()">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Logistics Executive</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">MasseyHacks VII / 7 Week Challenge</h1>
+            <div id="experience-desktop">
+                <div style = "height: 6vh;"></div>
+                <h1 style = "font-size: calc(.85em + 4vw);">Experience</h1>
+                <div style = "height: 6vh;"></div>
+                Click on each tab to learn more about what it was like!
+                <!--           <div class = "container w-100 mx-auto" style="margin: 0; padding: 0;">&ndash;&gt;-->
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-4">
+                        <div class="card row4" onclick="execute7WC()">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Logistics Executive</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">MasseyHacks VII / 7 Week Challenge</h1>
 
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            </div>
                         </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                    </div>
+                    <div class="col-4">
+                        <div class="card row4" onclick="">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Class Representative</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">UW Computer Science Club</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card row4" onclick="executeCSClub()">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Senior Leader</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">Vincent Massey Computer Science Club</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/cppLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                                <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div style="height: 6vh;"></div>
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-4">
+                        <div class="card row5">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Administrator</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">Anup Trading Ltd.</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card row5" onclick="">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Mentor</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">CodeReach</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card row5" onclick="executeScienceOlympiad()">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(1.8vw);">Club Leader</h1>
+                                <h1 style="font-weight: 300; font-size: calc(1vw);">Vincent Massey Science Olympics Club</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card row4" onclick="">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Class Representative</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">UW Computer Science Club</h1>
-
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card row4" onclick="executeCSClub()">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Senior Leader</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">Vincent Massey Computer Science Club</h1>
-
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
-                            <img src="Images/cppLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
-                            <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
-                        </div>
-                    </div>
-                </div>
-
-
+                <div style="height: 6vh;"></div>
             </div>
-            <div style="height: 6vh;"></div>
-            <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
-                <div class="col-4">
-                    <div class="card row5">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Administrator</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">Anup Trading Ltd.</h1>
+            <div id="experience-mobile">
+                <div style = "height: 6vh;"></div>
+                <h1 style = "font-size: calc(.85em + 4vw);">Experience</h1>
+                <div style = "height: 3vh;"></div>
 
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-12">
+                        <div class="card row1">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(5.4vw);">Class Representative</h1>
+                                <h1 style="font-weight: 300; font-size: calc(3vw);">UW Computer Science Club</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card row5" onclick="">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Mentor</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">CodeReach</h1>
+                <div style="height: 3vh;"></div>
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-12">
+                        <div class="card row2" onclick="executeCSClub()">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(5.4vw);">Senior Leader</h1>
+                                <h1 style="font-weight: 300; font-size: calc(3vw);">Vincent Massey Computer Science Club</h1>
 
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
-                            <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/cppLogo.png" style="height: 80%; width: auto; padding-right: 4%;">
+                                <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card row5" onclick="executeScienceOlympiad()">
-                        <div class="cardContent">
-                            <div style="margin-top: 26%"></div>
-                            <h1 style="font-weight: 300; font-size: calc(1.8vw);">Club Leader</h1>
-                            <h1 style="font-weight: 300; font-size: calc(1vw);">Vincent Massey Science Olympics Club</h1>
+                <div style="height: 3vh;"></div>
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-12">
+                        <div class="card row3">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(5.4vw);">Logistics Executive</h1>
+                                <h1 style="font-weight: 300; font-size: calc(3vw);">MasseyHacks VII / 7 Week Challenge</h1>
 
-                        </div>
-                        <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div style="height: 3vh;"></div>
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-12">
+                        <div class="card row1">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(5.4vw);">Administrator</h1>
+                                <h1 style="font-weight: 300; font-size: calc(3vw);">Anup Trading Ltd.</h1>
 
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 3vh;"></div>
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-12">
+                        <div class="card row2">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(5.4vw);">Mentor</h1>
+                                <h1 style="font-weight: 300; font-size: calc(3vw);">CodeReach</h1>
+
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                                <img src="Images/pythonLogo.png" style="height: 80%; width: auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 3vh;"></div>
+                <div class="row align-items-center" style="margin: 0; padding: 0; width: inherit;">
+                    <div class="col-12">
+                        <div class="card row3" onclick="executeScienceOlympiad()">
+                            <div class="cardContent">
+                                <div style="margin-top: 26%"></div>
+                                <h1 style="font-weight: 300; font-size: calc(5.4vw);">Club Leader</h1>
+                                <h1 style="font-weight: 300; font-size: calc(3vw);">Vincent Massey Science Olympics Club</h1>
+                            </div>
+                            <div class="cardBottom d-flex justify-content-end" style="margin-right: 5%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 6vh;"></div>
             </div>
-            <div style="height: 6vh;"></div>
 
-
-<!--            <div style = "height: 6vh;"></div>-->
-<!--            <div class="card-deck" style="">-->
-<!--                <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">-->
-<!--                    <h3>Game Creator & Player</h3>-->
-<!--                    <h5>ICS4U FSE</h5>-->
-<!--                </div>-->
-<!--                <div class="card" onclick="executeCSClub()" style="background-color: lightblue">-->
-<!--                    <h3>CS Club</h3>-->
-<!--                    <h5>Senior Leader</h5>-->
-<!--                </div>-->
-<!--                <div class="card" onclick="executeCP()" style = "background-color: lightblue;">-->
-<!--                    <h3>Competitive Programming</h3>-->
-<!--                    <h5>Just a classic hobby.</h5>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%; padding-top: 2vh;">-->
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executeICS4UFSE()" style = "background-color: lightblue;">-->
-<!--                        <h3>Game Creator & Player</h3>-->
-<!--                        <h5>ICS4U FSE</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executeCSClub()" style="background-color: lightblue">-->
-<!--                        <h3>CS Club</h3>-->
-<!--                        <h5>Senior Leader</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executeCP()" style = "background-color: lightblue;">-->
-<!--                        <h3>Competitive Programming</h3>-->
-<!--                        <h5>Just a classic hobby.</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">-->
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="execute7WC()" style = "background-color: lightblue;">-->
-<!--                        <h3>7WC & MasseyHacks VII</h3>-->
-<!--                        <h5>Logistics Executive</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executeScienceOlympiad()" style = "background-color: lightblue;">-->
-<!--                        <h3>Science Olympics Club</h3>-->
-<!--                        <h5>Club Leader</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executeAortta()" style="background-color: lightblue">-->
-<!--                        <h3>Aortta</h3>-->
-<!--                        <h5>Hack the North 2020++ Submission</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="row" style = "margin-left: auto; margin-right: auto; width: 90%;">-->
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executePizzaParty()" style = "background-color: lightblue;">-->
-<!--                        <h3>Pizza Party</h3>-->
-<!--                        <h5>GrizzHacks IV Submission</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executeSpaceBowl()" style = "background-color: lightblue;">-->
-<!--                        <h3>Space Bowl</h3>-->
-<!--                        <h5>MasseyHacks V Submission</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="column">-->
-<!--                    <div class="card" onclick="executePaintProject()" style="background-color: lightblue">-->
-<!--                        <h3>Paint Project</h3>-->
-<!--                        <h5>ICS3U Midterm</h5>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
         </section>
 
         <div style = "height: 10vh;"></div>

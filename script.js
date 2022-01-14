@@ -73,6 +73,15 @@ function funnyErase() {
     }
 }
 
+function experienceShowMore() {
+    if (document.getElementById('experienceshowbtn').innerHTML == "Show More") {
+        document.getElementById('experienceshowbtn').innerHTML = "Show Less"
+    }
+    else document.getElementById('experienceshowbtn').innerHTML = "Show More"
+    document.getElementById('experienceshowbtn').blur();
+}
+
+
 
 
 document.addEventListener("DOMContentLoaded", function(e) {
@@ -89,6 +98,7 @@ $(document).ready(function() {
     $("#aime").height($("#aime").width());
     $("#sspc").height($("#sspc").width());
     $("#comc").height($("#comc").width());
+    document.getElementById('experienceshowbtn').innerHTML = "Show More"
      
     
     
