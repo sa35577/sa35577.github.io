@@ -26,7 +26,6 @@ let arrIdx = 0, charIdx = 0;
 let score = 0;
 
 function funnyType() {
-    console.log(charIdx,arrIdx);
     if (charIdx < sentences[arrIdx].length) {
         if (!cursorSpan.classList.contains('typing')) {
             cursorSpan.classList.add('typing');
@@ -91,14 +90,15 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
 $(document).ready(function() {
     
-    $("#fermat").height($("#fermat").width());
-    $("#ccc").height($("#ccc").width());
-    $("#csmc").height($("#csmc").width());
-    $("#euclid").width($("#euclid").height());
-    $("#aime").height($("#aime").width());
-    $("#sspc").height($("#sspc").width());
-    $("#comc").height($("#comc").width());
-    document.getElementById('experienceshowbtn').innerHTML = "Show More"
+    // $("#fermat").height($("#fermat").width());
+    // $("#ccc").height($("#ccc").width());
+    // $("#csmc").height($("#csmc").width());
+    // $("#euclid").width($("#euclid").height());
+    // $("#aime").height($("#aime").width());
+    // $("#sspc").height($("#sspc").width());
+    // $("#comc").height($("#comc").width());
+    //
+    // document.getElementById('experienceshowbtn').innerHTML = "Show More"
      
     
     
