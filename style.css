@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6 {
     max-height: 100vh;
     color:blue;
     /* background: url("background.jpg") center/cover no-repeat fixed; */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("background.jpg") center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Images/background.jpg") center/cover no-repeat fixed;
 
 }
 

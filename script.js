@@ -100,6 +100,8 @@ $(document).ready(function() {
     //
     // document.getElementById('experienceshowbtn').innerHTML = "Show More"
      
-    
+    const yearSpan = document.getElementById('currentYear');
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
     
 });
